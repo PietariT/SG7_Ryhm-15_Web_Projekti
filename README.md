@@ -1,1 +1,0 @@
-# SG7_Ryhm-15_Web_Projekti
