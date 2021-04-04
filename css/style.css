@@ -10,12 +10,13 @@ Snow #FFFAFB */
 
 body {
 	background-color: #339989;
+
 }
 
 .tausta{
-
-	background-image: url("Untitled.png");	
+	background-image: linear-gradient(#131515 1%, transparent), url("Untitled.png") ;	
 	background-size: 100%;
+	background-color:  #131515;
 }
 
 .teksti{
@@ -75,7 +76,7 @@ a{
 
 .Ptesti1 p{
 	font-size: 2em;
-	color: black;
+	color: #fff;
 	margin: 0px;
 	padding: 0px;
 	padding-bottom: 10px;
@@ -86,7 +87,7 @@ a{
 .Ptesti1 h1{
 	padding: 0 200px 0px;
 	font-size: 3em;
-	color: black;
+	color: #fff;
 	margin: 0px;
 	padding: 0px;
 	padding-bottom: 10px;
@@ -109,6 +110,16 @@ footer {
 	background-color:#131515;
 	color: #fff;
 	position:relative
+}
+
+nav {
+	background-color: #131515;
+}
+
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
 }
 
 
