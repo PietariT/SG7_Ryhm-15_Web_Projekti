@@ -2,3 +2,20 @@
     Created on : 01.04.2021
     Author     : Pietari Tanner
 */
+.pttausta{
+	background-image: url("compass.jpg");	
+	background-size: 100%;
+}
+body {
+	background-color:#7DE2D1;
+}
+.tekst {
+	background-color: rgba(125, 226, 209, 0.5); 
+	border-style: solid;
+	border-radius: 10px;
+}
+.kys {
+	background-color: rgba(125, 226, 209, 0.5); 
+	border-style: solid;
+	border-radius: 10px;
+}
