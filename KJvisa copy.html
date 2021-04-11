@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+  <title>Projektityö :: SG7 Group 15</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Ryhmä 15">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/KJstyle_visa.css">
+
+</head>
+
+<body>
+  <main>
+    <section>
+      <div class="sivu">
+        <div class="aloita">
+          <button type="button" id="alota" name="pelaajalle">Aloita peli / Börja spela</button>
+        </div>
+
+        <div class="pelaajalle piilota">
+          <div class="pelaajalle_otsikko">
+            <span>
+              Pelin säännöt:
+            </span>
+          </div>
+          <div class="saannot">
+            <div class="info">1. Sinulla on aikaa <span>30 sekunttia</span>/kysymys</div>
+            <div class="info">2. Kun olet valinnut vastauksesi, et voi muuttaa sitä</div>
+            <div class="info">3. Jos aika loppuu, ennenkuin kerkeät vastata, peli loppuu</div>
+            <div class="info">4. Et voi poistua visasta, kun pelaat</div>
+            <div class="info">5. Saat pisteitä jokaisesta oikeasta vastauksesta.</div>
+            <div class="info"></div>
+          </div>
+        </div>
+        <div class="painikkeet piilota">
+          <button id="lopeta"><a href="index.html">Lopeta peli</a></button>
+          <button onclick="eteneminen()" type="button" id="jatka" name="jatkane">Jatka</button>
+        </div>
+
+
+        <div class="visa1 piilota">
+          <header>
+            <div class="otiskko">
+              <h2>Eläimet ruotsiksi</h2>
+            </div>
+            <div class="ajastin">
+              <div class="ajastin2">
+                Aikaa jäljellä
+              </div>
+              <div class="aika">30</div>
+            </div>
+            <div id="eteneminen">
+              <div id="aikajana"></div>
+            </div>
+          </header>
+
+          <b>Mikä eläin <u>hund</u> on suomeksi?</b>
+          <ul>
+            <li>
+              <input type="radio" id="koira" name="elukka" class="elukka" value="1">
+              <label for="koira">Koira</label>
+            </li>
+            <li>
+              <input type="radio" id="kissa" name="elukka" class="elukka">
+              <label for="kissa">Kissa</label>
+            </li>
+            <li>
+              <input type="radio" id="marsu" name="elukka" class="elukka">
+              <label for="marsu">Marsu</label>
+            </li>
+            <li>
+              <input type="radio" id="pingviini" name="elukka" class="elukka">
+              <label for="pingviini">Pingviini</label>
+            </li>
+          </ul>
+
+          <footer>
+
+            <div class="kysymysmaara">
+              <span>1/5</span>
+            </div>
+            <button type="button" id="jatka1" name="seuraava1">Seuraava kysymys</button>
+          </footer>
+        </div>
+      </div>
+
+      <div class="visa2 piilota">
+        <header>
+          <div class="otiskko">
+            <h2>Eläimet ruotsiksi</h2>
+          </div>
+          <div class="ajastin">
+            <div class="ajastin2">
+              Aikaa jäljellä
+            </div>
+            <div class="aika">30</div>
+          </div>
+          <div id="eteneminen">
+            <div id="aikajana"></div>
+          </div>
+        </header>
+
+        <b>Mikä eläin <u>svan</u> on suomeksi?</b>
+        <ul>
+          <li>
+            <input type="radio" id="susi" name="elukka2" class="elukka2">
+            <label for="susi">Susi</label>
+          </li>
+          <li>
+            <input type="radio" id="hiiri" name="elukka2" class="elukka2">
+            <label for="hiiri">Hiiri</label>
+          </li>
+          <li>
+            <input type="radio" id="joutsen" name="elukka2" class="elukka2" value="1">
+            <label for="joutsen">Joutsen</label>
+          </li>
+          <li>
+            <input type="radio" id="rotta" name="elukka2" class="elukka2">
+            <label for="rotta">Rotta</label>
+          </li>
+        </ul>
+
+        <footer>
+
+          <div class="kysymysmaara">
+            <span>2/5</span>
+          </div>
+          <button type="button" id="jatka2" name="seuraava2">Seuraava kysymys</button>
+        </footer>
+      </div>
+      </div>
+
+      <div class="visa3 piilota">
+        <header>
+          <div class="otiskko">
+            <h2>Eläimet ruotsiksi</h2>
+          </div>
+          <div class="ajastin">
+            <div class="ajastin2">
+              Aikaa jäljellä
+            </div>
+            <div class="aika">30</div>
+          </div>
+          <div id="eteneminen">
+            <div id="aikajana"></div>
+          </div>
+        </header>
+
+        <b>Mikä eläin <u>räv</u> on suomeksi?</b>
+        <ul>
+          <li>
+            <input type="radio" id="koira1" name="elukka3" class="elukka3">
+            <label for="koira1">Koira</label>
+          </li>
+          <li>
+            <input type="radio" id="kissa1" name="elukka3" class="elukka3">
+            <label for="kissa1">Kissa</label>
+          </li>
+          <li>
+            <input type="radio" id="kani" name="elukka3" class="elukka3">
+            <label for="kani">Kani</label>
+          </li>
+          <li>
+            <input type="radio" id="kettu" name="elukka3" class="elukka3" value="1">
+            <label for="kettu">Kettu</label>
+          </li>
+        </ul>
+
+        <footer>
+
+          <div class="kysymysmaara">
+            <span>3/5</span>
+          </div>
+          <button type="button" id="jatka3" name="seuraava3">Seuraava kysymys</button>
+        </footer>
+      </div>
+      </div>
+
+
+      <div class="visa4 piilota">
+        <header>
+          <div class="otiskko">
+            <h2>Eläimet ruotsiksi</h2>
+          </div>
+          <div class="ajastin">
+            <div class="ajastin2">
+              Aikaa jäljellä
+            </div>
+            <div class="aika">30</div>
+          </div>
+          <div id="eteneminen">
+            <div id="aikajana"></div>
+          </div>
+        </header>
+
+        <b>Mikä eläin <u>katt</u> on suomeksi?</b>
+        <ul>
+          <li>
+            <input type="radio" id="koira3" name="elukka4" class="elukka4">
+            <label for="koira3">Koira</label>
+          </li>
+          <li>
+            <input type="radio" id="kissa3" name="elukka4" class="elukka4" value="1">
+            <label for="kissa3">Kissa</label>
+          </li>
+          <li>
+            <input type="radio" id="ilves" name="elukka4" class="elukka4">
+            <label for="ilves">Ilves</label>
+          </li>
+          <li>
+            <input type="radio" id="hiiri2" name="elukka4" class="elukka4">
+            <label for="hiiri2">Hiiri</label>
+          </li>
+        </ul>
+
+        <footer>
+
+          <div class="kysymysmaara">
+            <span>4/5</span>
+          </div>
+          <button type="button" id="jatka4" name="seuraava4">Seuraava kysymys</button>
+        </footer>
+      </div>
+      </div>
+
+      <div class="visa5 piilota">
+        <header>
+          <div class="otiskko">
+            <h2>Eläimet ruotsiksi</h2>
+          </div>
+          <div class="ajastin">
+            <div class="ajastin2">
+              Aikaa jäljellä
+            </div>
+            <div class="aika">30</div>
+          </div>
+          <div id="eteneminen">
+            <div id="aikajana"></div>
+          </div>
+        </header>
+
+        <b>Mikä eläin <u>uggla</u> on suomeksi?</b>
+        <ul>
+          <li>
+            <input type="radio" id="harka" name="elukka5" class="elukka5">
+            <label for="harka">Härkä</label>
+          </li>
+          <li>
+            <input type="radio" id="ilves2" name="elukka5" class="elukka5">
+            <label for="ilves2">Ilves</label>
+          </li>
+          <li>
+            <input type="radio" id="pollo" name="elukka5" class="elukka5" value="1">
+            <label for="pollo">Pöllö</label>
+          </li>
+          <li>
+            <input type="radio" id="lehma" name="elukka5" class="elukka5">
+            <label for="lehma">Lehmä</label>
+          </li>
+        </ul>
+
+        <footer>
+
+          <div class="kysymysmaara">
+            <span>5/5</span>
+          </div>
+          <button type="button" id="jatka" name="tarkista">Tarkista pisteet</button>
+        </footer>
+      </div>
+      </div>
+      <div class="tulos piilota">
+        <div class="ikoni">
+          <i class="fa fa-star-o"></i>
+        </div>
+        <div class="lopputeksti">
+          Visa on suoritettu!
+        </div>
+        <div class="tulosteksti">
+          <span> Sait <span id="oikein">0</span>/5 oikein</span>
+        </div>
+        <button type="button" id="uudestaa" name="uudestaan">Uudestaan</butto>
+      </div>
+    </section>
+
+
+  </main>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/scripti.js"></script>
+  <script src="js/KJvisa.js"></script>
+</body>
+
+</html>
