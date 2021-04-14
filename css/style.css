@@ -5,8 +5,8 @@ Middle Blue Green #7DE2D1
 Snow #FFFAFB */
 
 body {
-	background-color: #339989;
-
+	background-color: #131515;
+	overflow-x: hidden;
 }
 
 
@@ -29,7 +29,7 @@ body {
 }
 .Ptesti{
 	padding: 80px 0px;
-    transform: skew(0deg, 5deg)
+    transform: skew(0deg, 5deg);
 }
 
 .Ptesti p{
@@ -93,7 +93,7 @@ a{
 	padding: 0px;
 	padding-bottom: 10px;
 	line-height: 1.4em;
-	width: 100%
+	width: 100%;
 }
 
 
@@ -110,7 +110,7 @@ a{
 footer {
 	background-color:#131515;
 	color: #fff;
-	position:relative
+	position:relative;
 }
 
 nav {
