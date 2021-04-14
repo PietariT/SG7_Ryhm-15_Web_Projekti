@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Ryhmä 15">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/muistipeli_tyylitiedosto.css">
 </head>
 <body>
     <main class="container-fluid">
@@ -86,45 +87,107 @@
                 </nav>
             </div>
         </header>
-
+    <div class="container-fluid tausta">
       
-      <div class="tausta row m-auto">
-           <section class="teksti1 col-auto">
-            <div class="Ptesti1 mt-3">
-              <h1>1.-3.-luokkalaisille</h1>
-              <p>Helpommat visat ovat vasta koulun käynnin aloittaneille 1.-3.-luokkalaisille.</p>
-            </div>
-              <button type="button" class="btn btn-success btn1"><a href="https://pixabay.com/fi/photos/kirjat-koulutus-kirjasto-nukka-1850645/" target="_blank">Lähde kuvalle</a></button>
-            
-          </section>
 
-          <section class="teksti">
-            <div class="Ptesti col-auto">
-              <h1>3.-6.-luokkalaisille</h1>
-              <p>Vaikeammat visat ja pelit on tarkoitettu 3.-6.-luokkalaisille.</p>
-              <button type="button" class="btn btn-success btn2"><a href="">Lähde kuvalle.</a></button>
+   <div class="row">
+          <div class="col"> 
+            <p class="siirrot mt-5">English language</p>
+            <p class="siirrot">Moves: <span id="siirrot"></span></p>
+           </div>
+        
+           <div class="row">  
+            <ul class="pakka mb-5 ms-5 m-lg-auto" id="korttiPakka"> <!-- ms pois ja div ylä puolelta. Takas normaaliksi -->
+                <li class="card" type="car">
+                    <i class="fa fa-car invisible"></i>
+                </li>
+                <li class="card" type="car">
+                    <p class="invisible">Car</p>
+                </li>
+                <li class="card" type="plane">
+                    <i class="fa fa-plane invisible"></i>
+                </li>
+                <li class="card" type="plane">
+                    <p class="invisible">Plane</p>
+                </li>
+                <li class="card" type="bell">
+                    <i class="fa fa-bell invisible"></i>
+                </li>
+                <li class="card" type="bell">
+                    <p class="invisible">Bell</p>
+                </li>
+                <li class="card" type="book">
+                    <i class="fa fa-book invisible"></i>
+                </li>
+                <li class="card" type="book">
+                    <p class="invisible">Book</p>
+                </li>
+                <li class="card " type="bicycle">
+                    <i class="fa fa-bicycle invisible"></i>
+                </li>
+                <li class="card" type="bicycle">
+                    <p class="invisible">Bicycle</p>
+                </li>
+                <li class="card" type="bed">
+                    <i class="fa fa-bed invisible"></i>
+                </li>
+                <li class="card" type="bed">
+                    <p class="invisible">Bed</p>
+                </li> 
+             
+                <li class="card" type="phone">
+                    <p class="fa fa-phone invisible"></p>
+                </li>
+                <li class="card" type="phone">
+                    <p class="invisible">Phone</p>
+                </li>
+                <li class="card" type="tv">
+                    <i class="fa fa-television invisible"></i>
+                </li>
+                <li class="card" type="tv">
+                    <p class="invisible">TV</p>
+                </li>
+            </ul>
             </div>
-          </section>
-     </div>
-
-     <footer class="row mt-auto mx-0 pt-4">
-      <div class="col-sm-12 col-md-12 col-lg-6 mt-3">
+    </div>
+    <footer class="row mt-auto mx-0 pt-4">
+      <div class="col-sm-12 col-md-12 col-lg-6 mt-2">
         <p class="text-center text-md-start">Roni Junttila</p>
     </div>
-    <div class="col-sm-12 col-md-12 col-lg-6 pt-3">
+    <div class="col-sm-12 col-md-12 col-lg-6 pt-3 ">
         <p class="text-center text-md-end">Bootstrap project<br>2021</p>
     </div>
       </footer>
-
     </main>
+    
+    <div class="modal" tabindex="-1" id="congratulations">
+      <div class="modal-dialog">
+          <div class="modal-content" style="color: white;">
+              <div class="modal-header bg-dark">
+                  <h5 class="modal-title" id="m_title">Congratulations</h5>
+                  <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body bg-dark" id="m_body">
+                  <p>You solved memory game.</p>
+                  <p>Your rating:<i id="tähti1"></i> <i id="tähti2"></i> <i id="tähti3"></i> <i id="tähti4"></i> <i id="tähti5"></i></p>
+              </div>
+              <div class="modal-footer bg-dark">
+                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>                        
+              </div>
+          </div>
+      </div>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" 
-    integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+    integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
     crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" 
-    integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+    integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
     crossorigin="anonymous"></script>
-    <script src="js/scripti.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/be5ea00b83.js" crossorigin="anonymous"></script>
+    <script src="js/muistipelin_koodi.js"></script>
 </body>
 </html>
