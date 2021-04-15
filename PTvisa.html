@@ -8,17 +8,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Ryhmä 15/ Pietari Tanner">
   <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/PTvisa_style.css">
 </head>
 
 <body>
-  <main class="container">
+  <main class="container-fluid">
     <header class="row">
       <div class="col">
-        <h1>Projekti</h1>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-          <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-dark">
+          <div class="container m-4">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#omaMenu"
               aria-controls="omaMenu" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -26,67 +27,67 @@
             <div class="collapse navbar-collapse" id="omaMenu">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link active link-light " aria-current="page" href="#">Etusivu</a>
+                  <a class="nav-link active link-light " aria-current="page" href="index01.html">Etusivu</a>
                 </li>
                 <li class="nav-item">
                   <div class="dropdown mx-1">
-                    <button class="btn btn-secondary dropdown-toggle bg bg-dark border-0" type="button"
+                    <button class="btn btn-secondary dropdown-toggle bg bg-transparent border-0" type="button"
                       id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                       på svenska
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li><a class="dropdown-item" href="#">Ruotti 01</a></li>
-                      <li><a class="dropdown-item" href="#">Ruotti 02</a></li>
+                      <li><a class="dropdown-item" href="KJvisa.html">Ruotti 01</a></li>
+
                     </ul>
                 </li>
                 <li class="nav-item">
                   <div class="dropdown mx-1">
-                    <button class="btn btn-secondary dropdown-toggle bg bg-dark border-0" type="button"
+                    <button class="btn btn-secondary dropdown-toggle bg bg-transparent border-0" type="button"
                       id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      Äikkä
+                      Maantieto
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li><a class="dropdown-item" href="#">Äikkä 01</a></li>
-                      <li><a class="dropdown-item" href="#">Äikkä 02</a></li>
+                      <li><a class="dropdown-item" href="PTvisa.html">Maantieto visa</a></li>
+
                     </ul>
                 </li>
                 <li class="nav-item">
                   <div class="dropdown mx-1">
-                    <button class="btn btn-secondary dropdown-toggle bg bg-dark border-0" type="button"
+                    <button class="btn btn-secondary dropdown-toggle bg bg-transparent border-0" type="button"
                       id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                       Enkku
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li><a class="dropdown-item" href="#">Enkku 01</a></li>
-                      <li><a class="dropdown-item" href="#">Enkku 02</a></li>
+                      <li><a class="dropdown-item" href="muistipeli.html">Enkku 01</a></li>
+
                     </ul>
                 </li>
                 <li class="nav-item">
                   <div class="dropdown mx-1">
-                    <button class="btn btn-secondary dropdown-toggle bg bg-dark border-0" type="button"
+                    <button class="btn btn-secondary dropdown-toggle bg bg-transparent border-0" type="button"
                       id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                       Bilsa
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li><a class="dropdown-item" href="#">Bilsa 01</a></li>
-                      <li><a class="dropdown-item" href="#">Bilsa 02</a></li>
+                      <li><a class="dropdown-item" href="THvisa.html">Bilsa 01</a></li>
+
                     </ul>
                   </div>
                 </li>
                 <li class="nav-item">
                   <div class="dropdown mx-1">
-                    <button class="btn btn-secondary dropdown-toggle bg bg-dark border-0" type="button"
+                    <button class="btn btn-secondary dropdown-toggle bg bg-transparent border-0" type="button"
                       id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                       Matematiikka
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li><a class="dropdown-item" href="#">Matikka 01</a></li>
-                      <li><a class="dropdown-item" href="#">Matikka 02</a></li>
+                      <li><a class="dropdown-item" href="matikka1.html">Matikka 01</a></li>
+
                     </ul>
                   </div>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link link-light" href="#">Tietoja</a>
+                  <a class="nav-link active link-light" href="tietoja.html">Tietoja</a>
                 </li>
               </ul>
             </div>
@@ -95,59 +96,61 @@
       </div>
     </header>
 
-<div class="pttausta ps-5 pb-3" style="min-height: 700px;">
-    <section>
-      <h1>Tietovisa</h1>
-    </section>
-    <section class="row">
-      <div class="tekst col-md-5 pt-2">
-        <p>Tervetuloa tietovisa sivulle. Kaikki kysymykset liittyvät Suomeen tai maatietoon.
-          Sivulta löydät ohjeet ja pistetaulukon. Lue ne ennen kuin aloitat.
-          Vihje kohdasta saat pientä apua jos et heti keksi vastausta. Yritä kuitenkin ensin ilman vihjeitä.
-          Onnea matkaan!!</p>
-      </div>
-      
-      <div class="col-md-3 mt-3 text-md-end">
-        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
-          Tietovisan ohjeet
-        </button>
+    <section class="pttausta ps-5 pb-3 img-fluid" style="min-height: 700px;">
+      <section class="row">
+        <h1>Tietovisa</h1>
+      </section>
+      <section>
+        <div class="tekst pt-2 ps-3 me-5 pb-1">
+          <p>Tervetuloa tietovisa sivulle. Kaikki kysymykset liittyvät Suomeen tai maantietoon.
+            Ennen tietovisan aloittamista tutustu tietovisan ohjeisiin ja pistetaulukkoon. Löydät ne
+            alla olevien painikkeiden kautta. Vihje kohdasta saat pientä apua jos et heti keksi vastausta. Yritä
+            kuitenkin ensin ilman vihjeitä.
+            Onnea matkaan!!</p>
+        </div>
+      </section>
 
-        <!-- Modal -->
-        <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-          aria-labelledby="staticBackdropLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">Tietovisan ohjeet</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body text-start">
-                1. Paina aloita nappia kun olet valmis aloittamaan visan.<br>
-                2. Ruudulle ilmestyy viisi kysymystä. Valitse mielestäsi oikea vastaus ja paina 
-                vastaa nappia. Näet heti oliko vastauksesi oikein vai väärin.<br>
-                3. Ole nopea, sinulla on jokaisen kysymyksen kohdalla aikaa vain 15 sekunttia. 
-                Jos et ole vastannut 15 sekunnin kuluessa kyseisen kysymyksen vastaukset menevät lukkoon 
-                ja sillä hetkellä valittu vastaus jää voimaan. Siirry välittömästi vastaamaan seuraavaan
-                kysymykseen koska 15 sekuntin aika jatkuu välittömästi vastausten mentyä lukkoon.<br>
-                4. Jos vastaat kysymykseen nopeammin saat seuraaviin kysymyksiin lisäaikaa. Koko visan aika 
-                on siis 1.15 minuuttia.<br>
-                5. Saat jokaisesta oikeasta vastauksesta 10 pistettä. Vastaamalla kaikkiin oikein voit saada 
-                yhteensä 50 pistettä.<br>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ymmärretty</button>
-
+      <section class="row mt-5">
+        <div class="col-md-3 mb-3">
+          <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+            Tietovisan ohjeet
+          </button>
+          <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Tietovisan ohjeet</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-start">
+                  1. Paina Aloita-painiketta kun olet valmis aloittamaan tietovisan.<br>
+                  2. Ruudulle ilmestyy yksi kysymys kerrallaan. Avatun kysymyksen vastaukset lukkiutuvat
+                  30 sekunnin kuluessa joten ole nopea.<br>
+                  3. Lue kysymys huolellisesti ja valitse mielestäsi oikea vastaus.
+                  Paina sen jälkeen Vastaa-painiketta. Näet heti oliko vastauksesi oikein vai väärin.<br>
+                  4. Jos et ole painanut Vastaa-painiketta 30 sekunnin kuluessa, sillä hetkellä valittu
+                  vastaus jää voimaan. Et voi enää tämän jälkeen muuttaa vastaustasi.<br>
+                  4. Seuraava kysymys -painikkeella avautuu uusi kysymys. Toimi kuten edellä olevassa kysymyksessä<br>
+                  5. Kun olet vastannut kaikkiin viiteen kysymykseen näet saamasi pisteet painamalla
+                  Näytä pisteet -painiketta.<br>
+                  5. Saat jokaisesta oikeasta vastauksesta 1 pisteen ja väärästä vastauksesta 0 pistettä.
+                  Vastaamalla kaikkiin oikein voit saada yhteensä 5 pistettä.<br>
+                  6. Tyhjennä sivu -painikkeella voit tyhjetää tietovisan.<br>
+                  7. Halutessasi voit tehdä visan uudelleen.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Ymmärretty</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-3 mt-3">
-        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
-          Tietovisan pistetaulukko
-        </button>
+        <div class="col-md-3 mb-3">
+          <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+            Pistetaulukko
+          </button>
         </div>
-        <!-- Modal -->
         <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
           aria-labelledby="staticBackdropLabel" aria-hidden="true">
           <div class="modal-dialog">
@@ -158,274 +161,384 @@
               </div>
               <div class="modal-body">
                 0 Pistettä hylätty<br>
-                10 Pistettä arvosana 1<br>
-                20 Pistettä arvosana 2<br>
-                30 Pistettä arvosana 3<br>
-                40 Pistettä arvosana 4<br>
-                50 Pistettä arvosana 5<br>
+                1 Piste arvosana 1<br>
+                2 Pistettä arvosana 2<br>
+                3 Pistettä arvosana 3<br>
+                4 Pistettä arvosana 4<br>
+                5 Pistettä arvosana 5<br>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ymmärretty</button>
-
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Ymmärretty</button>
               </div>
             </div>
           </div>
         </div>
+        <div class="col-md-3 mb-3">
+          <button id="aloita" type="button" class="btn btn-dark">Aloita visa</button>
+        </div>
+        <div class="col-md-3 mb-3">
+          <button id="uusi" type="button" class="btn btn-dark">Tyhjennä sivu</button>
+        </div>
+      </section>
+
+      <section class="row">
+        <div class="laatikko col-md-5 col-11 mt-3 me-md-5" name="kys1">
+          <form>
+            <h3>Kysymys 1. Mikä seuraavista on Suomen pohjoisin kunta?</h3>
+            <div>
+              <p class="fw-bolder text-center text-danger bg-dark" id="aikaa1"></p>
+            </div>
+            <dl>
+              <dt>Vihje <i class="fa fa-question-circle" aria-hidden="true"></i></dt>
+              <dd class="hided">Helsingistä on matkaa Kuusamoon 805km, Utsjoelle 1267km, Pudasjärvelle 692km,
+                Rovaniemelle 811km ja Kemijärvelle 892km.</dd>
+            </dl>
+            <div class="vastausboxi">
+              <div class="row">
+                <div class="form-check col-4 ms-3">
+                  <input class="form-check-input" type="radio" name="kysymys1" value="1" id="vastaus1" checked>
+                  <label class="form-check-label" for="vastaus1">Kuusamo</label>
+                </div>
+                <div class="col-7">
+                  <i class="fa fa-thumbs-down" aria-hidden="true" style="color: red;" name="vas1"></i>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-check col-4 ms-3">
+                  <input class="form-check-input" type="radio" name="kysymys1" value="2" id="vastaus2">
+                  <label class="form-check-label" for="vastaus2">Rovaniemi</label>
+                </div>
+                <div class="col-7">
+                  <i class="fa fa-thumbs-down" aria-hidden="true" style="color: red;" name="vas1"></i>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-check col-4 ms-3">
+                  <input class="form-check-input" type="radio" name="kysymys1" value="3" id="vastaus3">
+                  <label class="form-check-label" for="vastaus3">Utsjoki</label>
+                </div>
+                <div class="col-7">
+                  <i class="fa fa-thumbs-up" aria-hidden="true" name="vas1"></i>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-check col-4 ms-3">
+                  <input class="form-check-input" type="radio" name="kysymys1" value="4" id="vastaus4">
+                  <label class="form-check-label" for="vastaus4">Kemijärvi</label>
+                </div>
+                <div class="col-7">
+                  <i class="fa fa-thumbs-down" aria-hidden="true" style="color: red;" name="vas1"></i>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="form-check col-4 ms-3">
+                  <input class="form-check-input" type="radio" name="kysymys1" value="5" id="vastaus5">
+                  <label class="form-check-label" for="vastaus5">Pudasjärvi</label>
+                </div>
+                <div class="col-7">
+                  <i class="fa fa-thumbs-down" aria-hidden="true" style="color: red;" name="vas1"></i>
+                </div>
+              </div>
+            </div>
+          </form>
+          <div>
+            <button id="vastaa1" type="button" class="btn btn-dark">Vastaa</button>
+            <button id="seuraava1" type="button" class="btn btn-dark">Seuraava kysymys</button>
+          </div>
+          <div class="mt-3">
+            <p class="fw-bolder text-center text-danger bg-dark" id="vaarin1"></p>
+            <p class="fw-bolder text-center text-light bg-dark" id="oikein1"></p>
+          </div>
+        </div>
+        <div class="laatikko col-md-5 col-11 mt-3" name="kys2">
+          <form>
+            <h3>Kysymys 2. Mikä seuraavista ei kuulu Pohjoismaihin?</h3>
+            <div>
+              <p class="fw-bolder text-center text-danger bg-dark" id="aikaa2"></p>
+            </div>
+            <dl>
+              <dt>Vihje <i class="fa fa-question-circle" aria-hidden="true"></i></dt>
+              <dd class="hided">Yksi vaihtoehdoista sijaitsee keski-euroopassa.</dd>
+            </dl>
+            <div class="vastausboxi">
+              <div class="row mt-4">
+                <div class="form-check col-4 ms-3">
+                  <input class="form-check-input" type="radio" name="kysymys2" value="1" id="Vastaus2.1" checked>
+                  <label class="form-check-label" for="Vastaus2.1">Tanska</label>
+                </div>
+                <div class="col-7">
+                  <i class="fa fa-thumbs-down" aria-hidden="true" style="color: red;" name="vas2"></i>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-check col-4 ms-3">
+                  <input class="form-check-input" type="radio" name="kysymys2" value="2" id="Vastaus2.2">
+                  <label class="form-check-label" for="Vastaus2.2">Ruotsi</label>
+                </div>
+                <div class="col-7">
+                  <i class="fa fa-thumbs-down" aria-hidden="true" style="color: red;" name="vas2"></i>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-check col-4 ms-3">
+                  <input class="form-check-input" type="radio" name="kysymys2" value="3" id="Vastaus2.3">
+                  <label class="form-check-label" for="Vastaus2.3">Suomi</label>
+                </div>
+                <div class="col-7">
+                  <i class="fa fa-thumbs-down" aria-hidden="true" style="color: red;" name="vas2"></i>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-check col-4 ms-3">
+                  <input class="form-check-input" type="radio" name="kysymys2" value="4" id="Vastaus2.4">
+                  <label class="form-check-label" for="Vastaus2.4">Saksa </label>
+                </div>
+                <div class="col-7">
+                  <i class="fa fa-thumbs-up" aria-hidden="true" name="vas2"></i>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="form-check col-4 ms-3">
+                  <input class="form-check-input" type="radio" name="kysymys2" value="5" id="Vastaus2.5">
+                  <label class="form-check-label" for="Vastaus2.5">Norja </label>
+                </div>
+                <div class="col-7">
+                  <i class="fa fa-thumbs-down" aria-hidden="true" style="color: red;" name="vas2"></i>
+                </div>
+              </div>
+            </div>
+          </form>
+          <div>
+            <button id="vastaa2" type="button" class="btn btn-dark">Vastaa</button>
+            <button id="seuraava2" type="button" class="btn btn-dark">Seuraava kysymys</button>
+          </div>
+          <div class="mt-3">
+            <p class="fw-bolder text-center text-danger bg-dark" id="vaarin2"></p>
+            <p class="fw-bolder text-center text-light bg-dark" id="oikein2"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="row">
+        <div class="laatikko col-md-5 col-11 mt-3 me-md-5" name="kys3">
+          <form>
+            <h3>Kysymys 3. Minkä niminen on Suomen suurin järvi?</h3>
+            <div>
+              <p class="fw-bolder text-center text-danger bg-dark" id="aikaa3"></p>
+            </div>
+            <dl>
+              <dt>Vihje <i class="fa fa-question-circle" aria-hidden="true"></i></dt>
+              <dd class="hided">Kyseisessä järvessä asuu uhanalainen norppa laji.</dd>
+            </dl>
+            <div class="vastausboxi">
+              <div class="row">
+                <div class="form-check col-4 ms-3">
+                  <input class="form-check-input" type="radio" name="kysymys3" value="1" id="Vastaus3.1" checked>
+                  <label class="form-check-label" for="vastaus3.1">Oulujärvi</label>
+                </div>
+                <div class="col-7">
+                  <i class="fa fa-thumbs-down" aria-hidden="true" style="color: red;" name="vas3"></i>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-check col-4 ms-3">
+                  <input class="form-check-input" type="radio" name="kysymys3" value="2" id="vastaus3.2">
+                  <label class="form-check-label" for="vastaus3.2">Saimaa</label>
+                </div>
+                <div class="col-7">
+                  <i class="fa fa-thumbs-up" aria-hidden="true" name="vas3"></i>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-check col-4 ms-3">
+                  <input class="form-check-input" type="radio" name="kysymys3" value="3" id="vastaus3.3">
+                  <label class="form-check-label" for="vastaus3.3">Näsijärvi</label>
+                </div>
+                <div class="col-7">
+                  <i class="fa fa-thumbs-down" aria-hidden="true" style="color: red;" name="vas3"></i>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-check col-4 ms-3">
+                  <input class="form-check-input" type="radio" name="kysymys3" value="4" id="vastaus3.4">
+                  <label class="form-check-label" for="vastaus3.4">Keitele</label>
+                </div>
+                <div class="col-7">
+                  <i class="fa fa-thumbs-down" aria-hidden="true" style="color: red;" name="vas3"></i>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="form-check col-4 ms-3">
+                  <input class="form-check-input" type="radio" name="kysymys3" value="5" id="vastaus3.5">
+                  <label class="form-check-label" for="vastaus3.5">Kemijärvi</label>
+                </div>
+                <div class="col-7">
+                  <i class="fa fa-thumbs-down" aria-hidden="true" style="color: red;" name="vas3"></i>
+                </div>
+              </div>
+            </div>
+          </form>
+          <div>
+            <button id="vastaa3" type="button" class="btn btn-dark">Vastaa</button>
+            <button id="seuraava3" type="button" class="btn btn-dark">Seuraava kysymys</button>
+          </div>
+          <div class="mt-3">
+            <p class="fw-bolder text-center text-danger bg-dark" id="vaarin3"></p>
+            <p class="fw-bolder text-center text-light bg-dark" id="oikein3"></p>
+          </div>
+        </div>
+        <div class="laatikko col-md-5 col-11 mt-3" name="kys4">
+          <form>
+            <h3>Kysymys 4. Mikä seuraavista on Suomen pääkaupunki?</h3>
+            <div>
+              <p class="fw-bolder text-center text-danger bg-dark" id="aikaa4"></p>
+            </div>
+            <dl>
+              <dt>Vihje <i class="fa fa-question-circle" aria-hidden="true"></i></dt>
+              <dd class="hided">Samasta kaupungista löytyy huvipuisto Linnanmäki.</dd>
+            </dl>
+            <div class="vastausboxi">
+              <div class="row mt-4">
+                <div class="form-check col-4 ms-3">
+                  <input class="form-check-input" type="radio" name="kysymys4" value="1" id="Vastaus4.1" checked>
+                  <label class="form-check-label" for="Vastaus4.1">Seinajoki</label>
+                </div>
+                <div class="col-7">
+                  <i class="fa fa-thumbs-down" aria-hidden="true" style="color: red;" name="vas4"></i>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-check col-4 ms-3">
+                  <input class="form-check-input" type="radio" name="kysymys4" value="2" id="Vastaus4.2">
+                  <label class="form-check-label" for="Vastaus4.2">Turku</label>
+                </div>
+                <div class="col-7">
+                  <i class="fa fa-thumbs-down" aria-hidden="true" style="color: red;" name="vas4"></i>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-check col-4 ms-3">
+                  <input class="form-check-input" type="radio" name="kysymys4" value="3" id="Vastaus4.3">
+                  <label class="form-check-label" for="Vastaus4.3">Tampere</label>
+                </div>
+                <div class="col-7">
+                  <i class="fa fa-thumbs-down" aria-hidden="true" style="color: red;" name="vas4"></i>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-check col-4 ms-3">
+                  <input class="form-check-input" type="radio" name="kysymys4" value="4" id="Vastaus4.4">
+                  <label class="form-check-label" for="Vastaus4.4">Ivalo</label>
+                </div>
+                <div class="col-7">
+                  <i class="fa fa-thumbs-down" aria-hidden="true" style="color: red;" name="vas4"></i>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="form-check col-4 ms-3">
+                  <input class="form-check-input" type="radio" name="kysymys4" value="5" id="Vastaus4.5">
+                  <label class="form-check-label" for="Vastaus4.5">Helsinki</label>
+                </div>
+                <div class="col-7">
+                  <i class="fa fa-thumbs-up" aria-hidden="true" name="vas4"></i>
+                </div>
+              </div>
+            </div>
+          </form>
+          <div>
+            <button id="vastaa4" type="button" class="btn btn-dark">Vastaa</button>
+            <button id="seuraava4" type="button" class="btn btn-dark">Seuraava kysymys</button>
+          </div>
+          <div class="mt-3">
+            <p class="fw-bolder text-center text-danger bg-dark" id="vaarin4"></p>
+            <p class="fw-bolder text-center text-light bg-dark" id="oikein4"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="row">
+        <div class="laatikko col-md-5 col-11 mt-3 me-md-5" name="kys5">
+          <form>
+            <h3>Kysymys 5. Millä nimellä kutsutaan Lapissa asuvaa Suomen alkuperäiskansaa?</h3>
+            <div>
+              <p class="fw-bolder text-center text-danger bg-dark" id="aikaa5"></p>
+            </div>
+            <dl>
+              <dt>Vihje <i class="fa fa-question-circle" aria-hidden="true"></i></dt>
+              <dd class="hided">Heillä on myös oma puhuttava kieli.</dd>
+            </dl>
+            <div class="vastausboxi">
+              <div class="row mt-4">
+                <div class="form-check col-4 ms-3">
+                  <input class="form-check-input" type="radio" name="kysymys5" value="1" id="Vastaus5.1" checked>
+                  <label class="form-check-label" for="Vastaus5.1">Siamilaiset</label>
+                </div>
+                <div class="col-7">
+                  <i class="fa fa-thumbs-down" aria-hidden="true" style="color: red;" name="vas5"></i>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-check col-4 ms-3">
+                  <input class="form-check-input" type="radio" name="kysymys5" value="2" id="Vastaus5.2">
+                  <label class="form-check-label" for="Vastaus5.2">Kaamoslaiset</label>
+                </div>
+                <div class="col-7">
+                  <i class="fa fa-thumbs-down" aria-hidden="true" style="color: red;" name="vas5"></i>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-check col-4 ms-3">
+                  <input class="form-check-input" type="radio" name="kysymys5" value="3" id="Vastaus5.3">
+                  <label class="form-check-label" for="Vastaus5.3">Saamelaiset</label>
+                </div>
+                <div class="col-7">
+                  <i class="fa fa-thumbs-up" aria-hidden="true" name="vas5"></i>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-check col-4 ms-3">
+                  <input class="form-check-input" type="radio" name="kysymys5" value="4" id="Vastaus5.4">
+                  <label class="form-check-label" for="Vastaus5.4">Lappalaiset</label>
+                </div>
+                <div class="col-7">
+                  <i class="fa fa-thumbs-down" aria-hidden="true" style="color: red;" name="vas5"></i>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="form-check col-4 ms-3">
+                  <input class="form-check-input" type="radio" name="kysymys5" value="5" id="Vastaus5.5">
+                  <label class="form-check-label" for="Vastaus5.5">Joikhalaiset</label>
+                </div>
+                <div class="col-7">
+                  <i class="fa fa-thumbs-down" aria-hidden="true" style="color: red;" name="vas5"></i>
+                </div>
+              </div>
+            </div>
+          </form>
+          <div>
+            <button id="vastaa5" type="button" class="btn btn-dark">Vastaa</button>
+            <button id="seuraava5" type="button" class="btn btn-dark">Näytä pisteet</button>
+          </div>
+          <div class="mt-3">
+            <p class="fw-bolder text-center text-danger bg-dark" id="vaarin5"></p>
+            <p class="fw-bolder text-center text-light bg-dark" id="oikein5"></p>
+          </div>
+        </div>
+        <div class="laatikko col-md-5 col-11 mt-3 text-center" name="kys6">
+          <h3 class="mt-md-4">Sait pisteitä:</h3>
+          <p class="palkinto text-center mt-md-5" id="pisteet"></p>
+        </div>
+      </section>
     </section>
-    <section class="row" >
-    <div class="col-md-2 mt-3">
-      <button style="width: 150px;" id="aloita" type="button" class="btn btn-dark">Aloita</button>
-    </div>
-    <div class="col-md-2 mt-3">
-      <button style="width: 150px;" id="uusi" type="button" class="btn btn-dark">Tyhjennä sivu</button>
-    </div>
-  </section>
 
-    <section class="row mt-3 pt-3">
-      <div class="kys col-md-5 mt-3 me-5" name="kys1">
-        <h3 class="otsikot">Kysymys 1. Mikä seuraavista on Suomen pohjoisin kunta?</h3>
-        <form class="mb-3">
-          <div class="form-check mt-4">
-            <input class="form-check-input" type="radio" name="kysymys1" value="1" id="vastaus1" checked>
-            <label class="form-check-label" for="vastaus1">
-              Kuusamo
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="kysymys1" value="2" id="vastaus2">
-            <label class="form-check-label" for="vastaus2">
-              Rovaniemi
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="kysymys1" value="3" id="vastaus3">
-            <label class="form-check-label" for="vastaus3">
-              Utsjoki
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="kysymys1" value="4" id="vastaus4">
-            <label class="form-check-label" for="vastaus4">
-              Kemijärvi
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="kysymys1" value="5" id="vastaus5">
-            <label class="form-check-label" for="vastaus5">
-              Pudasjärvi
-            </label>
-          </div>
-        </form>
-        <div>
-          <button id="vastaa1" type="button" class="btn btn-dark">Vastaa</button>
-          <button id="seuraava1" type="button" class="btn btn-dark">Seuraava kysymys</button>
-        </div>
-        <div class="mt-3">
-          <p id="aikaa1"></p>
-          <p class=" fw-bolder text-center text-danger bg-dark" id="vaarin1"></p>
-          <p class="fw-bolder text-center text-warning bg-dark" id="oikein1"></p>
-        </div>
+    <footer class="row text-center m-auto fixed-bottom">
+      <div class="col-md-6 text-md-start mt-2">
+        <p>Projekti 2021</p>
       </div>
-
-      <div class="kys col-md-5 mt-3" name="kys2">
-        <h3 class="otsikot">Kysymys 2. Mikä seuraavista ei kuulu Pohjoismaihin?</h3>
-        <form class="mb-3">
-          <div class="form-check mt-4">
-            <input class="form-check-input" type="radio" name="kysymys2" value="1" id="Vastaus2.1" checked>
-            <label class="form-check-label" for="Vastaus2.1">
-              Tanska
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="kysymys2" value="2" id="Vastaus2.2">
-            <label class="form-check-label" for="Vastaus2.2">
-              Ruotsi
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="kysymys2" value="3" id="Vastaus2.3">
-            <label class="form-check-label" for="Vastaus2.3">
-              Suomi
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="kysymys2" value="4" id="Vastaus2.4">
-            <label class="form-check-label" for="Vastaus2.4">
-              Ranska
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="kysymys2" value="5" id="Vastaus2.5">
-            <label class="form-check-label" for="Vastaus2.5">
-              Norja
-            </label>
-          </div>
-        </form>
-        <div>
-          <button id="vastaa2" type="button" class="btn btn-dark">Vastaa</button>
-          <button id="seuraava2" type="button" class="btn btn-dark">Seuraava kysymys</button>
-        </div>
-        <div class="mt-3">
-          <p id="aikaa2"></p>
-          <p class="fw-bolder text-center text-danger bg-dark" id="vaarin2"></p>
-          <p class="fw-bolder text-center text-warning bg-dark" id="oikein2"></p>
-        </div>
+      <div class="col-md-6 text-md-end mt-2">
+        <p>Tietovisa<br>Pietari Tanner</p>
       </div>
-    </section>
-
-    <section class="row">
-      <div class="kys col-md-5 mt-3 me-5" name="kys3">
-        <h3 class="otsikot">Kysymys 3. Minkä niminen on Suomen suurin järvi?</h3>
-        <form class="mb-3">
-          <div class="form-check mt-4">
-            <input class="form-check-input" type="radio" name="kysymys3" value="1" id="Vastaus3.1" checked>
-            <label class="form-check-label" for="vastaus3.1">
-              Oulujärvi
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="kysymys3" value="2" id="vastaus3.2">
-            <label class="form-check-label" for="vastaus3.2">
-              Saimaa
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="kysymys3" value="3" id="vastaus3.3">
-            <label class="form-check-label" for="vastaus3.3">
-              Näsijärvi
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="kysymys3" value="4" id="vastaus3.4">
-            <label class="form-check-label" for="vastaus3.4">
-              Keitele
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="kysymys3" value="5" id="vastaus3.5">
-            <label class="form-check-label" for="vastaus3.5">
-              Kemijärvi
-            </label>
-          </div>
-        </form>
-        <div>
-          <button id="vastaa3" type="button" class="btn btn-dark">Vastaa</button>
-          <button id="seuraava3" type="button" class="btn btn-dark">Seuraava kysymys</button>
-        </div>
-        <div class="mt-3">
-          <p id="aikaa3"></p>
-          <p class="fw-bolder text-center text-danger bg-dark" id="vaarin3"></p>
-          <p class="fw-bolder text-center text-warning bg-dark" id="oikein3"></p>
-        </div>
-      </div>
-
-      <div class="kys col-md-5 mt-3" name="kys4">
-        <h3 class="otsikot">Kysymys 4. Mikä seuraavista on Suomen pääkaupunki?</h3>
-        <form class="mb-3">
-          <div class="form-check mt-4">
-            <input class="form-check-input" type="radio" name="kysymys4" value="1" id="Vastaus4.1" checked>
-            <label class="form-check-label" for="Vastaus4.1">
-              Seinajoki
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="kysymys4" value="2" id="Vastaus4.2">
-            <label class="form-check-label" for="Vastaus4.2">
-              Turku
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="kysymys4" value="3" id="Vastaus4.3">
-            <label class="form-check-label" for="Vastaus4.3">
-              Tampere
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="kysymys4" value="4" id="Vastaus4.4">
-            <label class="form-check-label" for="Vastaus4.4">
-              Ivalo
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="kysymys4" value="5" id="Vastaus4.5">
-            <label class="form-check-label" for="Vastaus4.5">
-              Helsinki
-            </label>
-          </div>
-        </form>
-        <div>
-          <button id="vastaa4" type="button" class="btn btn-dark">Vastaa</button>
-          <button id="seuraava4" type="button" class="btn btn-dark">Seuraava kysymys</button>
-        </div>
-        <div class="mt-3">
-          <p id="aikaa4"></p>
-          <p class="fw-bolder text-center text-danger bg-dark" id="vaarin4"></p>
-          <p class="fw-bolder text-center text-warning bg-dark" id="oikein4"></p>
-        </div>
-      </div>
-    </section>
-
-    <section class="row">
-      <div class="kys col-md-5 mt-3" name="kys5">
-        <h3 class="otsikot">Kysymys 5. Millä nimellä kutsutaan Lapissa asuvaa Suomen alkuperäiskansaa?</h3>
-        <form class="mb-3">
-          <div class="form-check mt-4">
-            <input class="form-check-input" type="radio" name="kysymys5" value="1" id="Vastaus5.1" checked>
-            <label class="form-check-label" for="Vastaus5.1">
-              Siamilaiset
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="kysymys5" value="2" id="Vastaus5.2">
-            <label class="form-check-label" for="Vastaus5.2">
-              Kaamoslaiset
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="kysymys5" value="3" id="Vastaus5.3">
-            <label class="form-check-label" for="Vastaus5.3">
-              Saamelaiset
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="kysymys5" value="4" id="Vastaus5.4">
-            <label class="form-check-label" for="Vastaus5.4">
-              Lappalaiset
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="kysymys5" value="5" id="Vastaus5.5">
-            <label class="form-check-label" for="Vastaus5.5">
-              Joikhalaiset
-            </label>
-          </div>
-        </form>
-        <div>
-          <button id="vastaa5" type="button" class="btn btn-dark">Vastaa</button>
-          <button id="seuraava5" type="button" class="btn btn-dark">Näytä pisteet</button>
-        </div>
-        <div class="mt-3">
-          <p id="aikaa5"></p>
-          <p class="fw-bolder text-center text-danger bg-dark" id="vaarin5"></p>
-          <p class="fw-bolder text-center text-warning bg-dark" id="oikein5"></p>
-        </div>
-      </div>
-
- <div class="col-md-5 mt-3">
-  <p id="vastaus1_1"></p> 
- </div>
-    </section>
-  </div>
-
-  <footer class="row text-center m-auto">
-    <div class="col-md-6 text-md-start mt-5">
-      <p>Projekti 2021</p>
-      </div>
-      <div class="col-md-6 text-md-end mt-5">
-      <p>Tietovisa Pietari Tanner</p>
-    </div>
-  </footer>
-
+    </footer>
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"

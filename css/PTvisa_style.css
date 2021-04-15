@@ -2,20 +2,48 @@
     Created on : 01.04.2021
     Author     : Pietari Tanner
 */
-.pttausta{
-	background-image: url("compass.jpg");	
-	background-size: 100%;
-}
-body {
-	background-color:#7DE2D1;
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+.pttausta {
+  background-image: url('compass.jpg');
+  background-size: 100%;
 }
 .tekst {
-	background-color: rgba(125, 226, 209, 0.5); 
-	border-style: solid;
-	border-radius: 10px;
+  background-color: rgba(125, 226, 209, 0.5);
+  border-collapse: inherit;
+  border-radius: 10px;
+  box-shadow: 20px 20px 10px 10px #2b2c28;
 }
-.kys {
-	background-color: rgba(125, 226, 209, 0.5); 
-	border-style: solid;
-	border-radius: 10px;
+.laatikko {
+  background-color: rgba(125, 226, 209, 0.5);
+  border-collapse: collapse;
+  border-radius: 10px;
+  box-shadow: 15px 15px 10px 10px #2b2c28;
+  margin-bottom: 40px;
+  padding-top: 10px;
+}
+.palkinto {
+  font-family: 'Parisienne', cursive;
+  font-size: 130px;
+  font-weight: bolder;
+}
+.form-check .fa {
+  display: flex;
+}
+.modal-body {
+  background-color: #7de2d1;
+}
+.modal-header,
+.modal-footer {
+  background-color: #339989;
+}
+/* vihjeet piiloon*/
+.hided {
+  display: none;
+}
+.vastausboxi {
+  background-color: rgba(150, 226, 209, 0.2);
+  border-collapse: inherit;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 10px #2b2c28;
 }
