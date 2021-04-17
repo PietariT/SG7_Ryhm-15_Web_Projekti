@@ -7,6 +7,7 @@ function eteneminen() {
     function frame() {
       if (width == 100) {
         clearInterval(id);
+        
       } else {
         width++; 
         elem.style.width = width + '%'; 
@@ -15,9 +16,8 @@ function eteneminen() {
     } 
 
     let oikein = {
-        correct : 0
-    };
-
+        correct: 0
+    }
 $(function(){
 
 
@@ -29,6 +29,7 @@ $(function(){
     $("[name=jatkane]").on("click", function(){
         $(".pelaajalle").addClass("piilota");
         $(".painikkeet").addClass("piilota");
+        $(".taulukko").removeClass("piilota");
         $(".visa1").removeClass("piilota");
 
     }); 
@@ -156,12 +157,33 @@ $(function(){
         $(".visa5").addClass("piilota");
         $(".tulos").removeClass("piilota");
 
-    }); 
+        if (oikein.correct <= 1) {
+            $(".palkinto0").removeClass("piilota")
+
+        }
+        if (oikein.correct === 2) {
+            $(".palkinto0").addClass("piilota")
+            $(".palkinto1").removeClass("piilota")
+        }
+        if (oikein.correct >= 3) {
+            $(".palkinto0").addClass("piilota")
+            $(".palkinto1").addClass("piilota")
+            $(".palkinto2").removeClass("piilota")
+        }
+        if (oikein.correct > 4) {
+            $(".palkinto1").removeClass("piilota")
+            $(".palkinto2").removeClass("piilota")
+            $(".palkinto3").removeClass("piilota")
+        }
 
 
+    });
+
+ 
     $("[name=uudestaan]").on("click", function(){
         location.reload();
     });
 
     });
+
 });
