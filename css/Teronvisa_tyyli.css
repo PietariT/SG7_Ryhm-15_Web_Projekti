@@ -1,0 +1,26 @@
+.teroback {
+    background-image: url("elefantti.jpg");
+    background-size: auto;
+}
+label.radio span {
+    padding: 4px 0px;
+    border: 3px solid;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 7px;
+    
+}
+
+.container {
+    color:#7E159E;
+}
+
+.projekti {
+    color: seashell;
+}
+
+.kyssäri {
+    color: black;
+}
