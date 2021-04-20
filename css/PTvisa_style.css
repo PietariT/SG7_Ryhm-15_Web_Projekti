@@ -19,7 +19,7 @@
   border-collapse: collapse;
   border-radius: 10px;
   box-shadow: 15px 15px 10px 10px #2b2c28;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   padding-top: 10px;
 }
 .palkinto {
@@ -31,7 +31,12 @@
   display: flex;
 }
 .modal-body {
-  background-color: #7de2d1;
+  /*background-color: #7de2d1;*/
+  background-color: rgba(150, 226, 209, 0.2);
+  border-collapse: inherit;
+  
+  box-shadow: inset 5px 5px 10px 10px #2b2c28;
+  padding: 20px;
 }
 .modal-header,
 .modal-footer {
@@ -45,5 +50,6 @@
   background-color: rgba(150, 226, 209, 0.2);
   border-collapse: inherit;
   border-radius: 10px;
-  box-shadow: 5px 5px 10px 10px #2b2c28;
+  box-shadow: inset 5px 5px 10px 10px #2b2c28;
+  padding: 20px;
 }
