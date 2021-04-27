@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <main class="container-fluid">
+  <main class="container">
     <header class="row">
       <div class="col">
         <nav class="navbar navbar-expand-md navbar-dark">
@@ -59,7 +59,7 @@
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                       <li><a class="dropdown-item" href="muistipeli.html">Enkku 01</a></li>
-
+                      <li><a class="dropdown-item" href="PTristikko.html">Enkku 02</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
@@ -98,7 +98,15 @@
 
     <section class="pttausta ps-5 pb-3 mb-5 img-fluid" style="min-height: 700px;">
       <section class="row">
+        <div class="col-6">
         <h1>Tietovisa</h1>
+      </div>
+      <div class="col-6">
+        <address class="text-end me-3">Lähde kuvalle
+          <a href="https://pixabay.com/fi/photos/kompassi-kartta-suunta-astetta-2946959/"
+            target="_blank" class="bg-dark">pixabay</a>
+        </address>
+      </div>
       </section>
       <section>
         <div class="tekst pt-2 ps-3 me-5 pb-1">
@@ -180,7 +188,7 @@
           <button id="uusi" type="button" class="btn btn-dark">Tyhjennä sivu</button>
         </div>
       </section>
-
+    
       <section class="row">
         <div class="laatikko col-md-5 col-11 mt-3 me-md-5" name="kys1">
           <form>
@@ -250,7 +258,7 @@
             <p class="fw-bolder text-center text-light bg-dark" id="oikein1"></p>
           </div>
         </div>
-        <div class="laatikko col-md-5 col-11 mt-3" name="kys2">
+        <div class="laatikko col-md-5 col-11 mt-3 me-md-5" name="kys2">
           <form>
             <h3>Kysymys 2. Mikä seuraavista ei kuulu Pohjoismaihin?</h3>
             <div>
@@ -529,8 +537,7 @@
           <p class="palkinto text-center mt-md-5" id="pisteet"></p>
         </div>
       </section>
-    </section>
-
+    
     <footer class="row text-center m-auto fixed-bottom">
       <div class="col-md-6 text-md-start mt-2">
         <p>Projekti 2021</p>
