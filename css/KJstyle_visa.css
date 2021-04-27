@@ -11,22 +11,20 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    background-color: #2B2C28;
 }
-section {
-    width:100%;
-    padding-left: 30%;
-    padding-bottom: 5%;
-    background-color:azure;
-}
+
 
 
 h2 {
     font-family: 'New Tegomin', serif;
     color:teal;
 } 
+
 .piilota{
     display:none;
 }
+
 .aloita,
 .pelaajalle,
 .visa1,
@@ -50,11 +48,10 @@ h2 {
 .visa3, 
 .visa4, 
 .visa5,
-.tulos,
-.painikkeet {
+.tulos {
     opacity: 1;
     z-index: 5;
-    pointer-events: auto;
+
     transform: translate(-50%, -50%) scale(1);
 }
 .pelaajalle .pelaajalle_otsikko{
@@ -88,26 +85,33 @@ h2 {
 
 .painikkeet{
     background-color:lightgreen;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    pointer-events: auto;
+    cursor: pointer; 
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-top: 1px solid lightgrey;
+
+
+
+}
+#aloita{
+    background-color:lightgreen;
     font-size: 20px;
     padding: 10px 20px;
     outline: none;
     border: none;
     border-radius: 10px;
     cursor: pointer; 
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 0 30px;
-    border-top: 1px solid lightgrey;
-    position: absolute;
-    top: 66%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
-                0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+#aloita a{
 
+color:black;
+}
 
 #lopeta {
     background-color:rgb(61, 161, 66);
@@ -117,7 +121,12 @@ h2 {
     border: none;
     border-radius: 10px;
 }
-#jatka {
+#jatka,
+#jatka1,
+#jatka2,
+#jatka3,
+#jatka4,
+#uudestaa {
     background-color:lightgreen;
     font-size: 20px;
     padding: 10px 20px;
@@ -146,11 +155,11 @@ h2 {
     padding: 15px 30px;
 }
 .tulos{
-    background: #fff;
+    background: aquamarine;
     border-radius: 5px;
     display: flex;
     padding: 25px 30px;
-    width: 450px;
+    width: 650px;
     align-items: center;
     flex-direction: column;
     justify-content: center;
@@ -163,7 +172,7 @@ h2 {
 .visa4, 
 .visa5{
     background-color: aquamarine;
-    max-width: 650px;
+    width: 650px;
     border-radius: 10px;
     transform: translate(-50%, -50%) scale(0.9);
     transition: all 0.3s ease;
@@ -177,11 +186,7 @@ h2 {
     background-color:rgb(61, 161, 66);
     display: flex;
 }
-.visa1 header,
-.visa2 header,
-.visa3 header,
-.visa4 header,
-.visa5 header {
+.taulukko{
     height: 80px;
     padding: 0 25px;
     background-color: aquamarine;
@@ -189,12 +194,9 @@ h2 {
     align-items: center;
     justify-content: space-between;
     border-radius: 10px 10px 0px 0px;
-}
-.visa1 header .ajastin,
-.visa2 header .ajastin, 
-.visa3 header .ajastin,
-.visa4 header .ajastin, 
-.visa5 header .ajastin  {
+
+} 
+.taulukko .ajastin  {
     display: flex;
     align-items: center;
     justify-content: space-between;
