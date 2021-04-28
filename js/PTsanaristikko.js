@@ -144,7 +144,7 @@ $(function () {
         
         let sana7_v = v7_1 + v7_2 + v7_3 + v7_4 + v7_5 + v7_6;
         
-        if (sana7_v === "minute") {
+        if (sana7_v === "online") {
             $(".7_pysty").addClass("oikein");
             
         } else {
@@ -232,11 +232,11 @@ $(function () {
         let p11_2 = $("#11_2p").val();
         let p11_3 = $("#5_2v_11_3p").val();
         let p11_4 = $("#11_4p").val();
-        //let p11_5 = $("#7_2v_11_5p").val();
+        let p11_5 = $("#7_2v_11_5p").val();
         
-        let sana11_p = p11_1 + p11_2 + p11_3 + p11_4// + p10_5;
+        let sana11_p = p11_1 + p11_2 + p11_3 + p11_4 + p11_5;
         
-        if (sana11_p === "away") {
+        if (sana11_p === "again") {
             $(".11_vaaka").addClass("oikein");
             
         } else {

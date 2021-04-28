@@ -93,53 +93,31 @@
         </div>
       </header>
       <section class="text-center mb-md-4">
-        <h1>Englannin sanaristikko</h1>
+        <h1>English crossword</h1>
       </section>
 
-      <section class="row m-3">
-      
-          <div class="col-md-4">
-          <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">Ohjeet</button>
+      <section class="row m-3 justify-content-center">
+        <div class="col-sm-3">
+          <address class="me-3" style="color: #339989;">Lähde kuvalle
+            <a href="https://pixabay.com/fi/photos/london-bridge-towers-tower-bridge-2324875/" target="_blank"
+              class="bg-dark">pixabay</a>
+          </address>
         </div>
-        <div class="col-md-4">
-          <button id="vastaa" type="button" class="btn btn-light">Tarkista vastaukset</button>
+          <div class="col-sm-3">
+          <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">Instructions</button>
         </div>
-        <div class="col-md-4">
-          <button id="piste" type="button" class="btn btn-light disabled">Tarkista pisteet</button>
+        <div class="col-sm-3">
+          <button id="vastaa" type="button" class="btn btn-light">Check answers</button>
         </div>
-        
+        <div class="col-sm-3">
+          <button id="piste" type="button" class="btn btn-light disabled">Check your points</button>
+        </div>
       </section>
  
-        <section class="sivu row">
-          <div class="kysymykset col-xl-4 col-md-12 col-sm-12">
-            <div class="row">
-            <div class="col-6">
-            <h4>Pysty</h4>
-            <p>1. Teroitin</p>
-            <p>2. Rotta</p>
-            <p>3. Pippuri</p>
-            <p>4. Halpa</p>
-            <p>5. Kortti</p>
-            <p>6. Harvinainen</p>
-            <p>7. Minuutti</p>
-          </div>
-          <div class="col-6">
-            <h4>Vastaukset</h4>           
-            <p>1. <span id="kys1"></span></p>          
-            <p>2. <span id="kys2"></span></p>          
-            <p>3. <span id="kys3"></span></p>        
-            <p>4. <span id="kys4"></span></p>    
-            <p>5. <span id="kys5"></span></p>  
-            <p>6. <span id="kys6"></span></p>    
-            <p>7. <span id="kys7"></span></p>
-          </div>
-          </div>
-          <p id="pisteet"></p>
-        </div>
-      
-        
-          <div class="col-xl-4 col-md-12 col-sm-12">
-          <table class="pohja" id="ristikko" cellpadding="0" cellspacing="0">
+        <section class="sivu row m-3 justify-content-center">
+<div>
+          <div class="col-xxl-12 col-xl-12 col-md-12 col-sm-12">
+          <table class="pohja justify-content-center" id="ristikko" cellpadding="0" cellspacing="0">
             <div>
               <tr>
                 <td><div><span>1., 8.</span><input type="text" maxlength="1" class="1_pysty 8_vaaka" id="1_1v_8_1p"/></div></td>
@@ -264,32 +242,59 @@
             </div>
           </table>
         </div>
-    
-          <div class="kysymykset col-xl-4 col-md-12 col-sm-12">
-            <div class="row">
-            <div class="col-6">
-            <h4>Pysty</h4>
-            <p>8. Mansikka</p>
-            <p>9. Opettaja</p>
-            <p>10. Violetti</p>
-            <p>11. Poissa</p>
-            <p>12. Paperi</p>
-            <p>13. Säännöt</p>
-            <p>14. Omena</p>
-          </div>
+      </div>
+        <div class="kysymykset col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12"></block>
+          <div class="row">
           <div class="col-6">
-            <h4>Vastaukset</h4>
-            <p>8. <span id="kys8"></span></p>
-            <p>9. <span id="kys9"></span></p>
-            <p>10. <span id="kys10"></span></p>
-            <p>11. <span id="kys11"></span></p>
-            <p>12. <span id="kys12"></span></p>
-            <p>13. <span id="kys13"></span></p>
-            <p>14. <span id="kys14"></span></p>
-          </div>
-          </div>
-          <p id="pisteet"></p>
+          <h4>Vertical row</h4>
+          <p>1. Teroitin</p>
+          <p>2. Rotta</p>
+          <p>3. Pippuri</p>
+          <p>4. Halpa</p>
+          <p>5. Kortti</p>
+          <p>6. Harvinainen</p>
+          <p>7. Netissä</p>
         </div>
+        <div class="col-6">
+          <h4>Answers</h4>           
+          <p>1. <span id="kys1"></span></p>          
+          <p>2. <span id="kys2"></span></p>          
+          <p>3. <span id="kys3"></span></p>        
+          <p>4. <span id="kys4"></span></p>    
+          <p>5. <span id="kys5"></span></p>  
+          <p>6. <span id="kys6"></span></p>    
+          <p>7. <span id="kys7"></span></p>
+        </div>
+        </div>
+        <p id="pisteet"></p>
+      </div>
+      <div class="kysymykset col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12" id="alempi"></block>
+        <div class="row">
+        <div class="col-6">
+        <h4>Horizontal row</h4>
+        <p>8. Mansikka</p>
+        <p>9. Opettaja</p>
+        <p>10. Violetti</p>
+        <p>11. Uudestaan</p>
+        <p>12. Paperi</p>
+        <p>13. Säännöt</p>
+        <p>14. Omena</p>
+      </div>
+      <div class="col-6">
+        <h4>Answers</h4>
+        <p>8. <span id="kys8"></span></p>
+        <p>9. <span id="kys9"></span></p>
+        <p>10. <span id="kys10"></span></p>
+        <p>11. <span id="kys11"></span></p>
+        <p>12. <span id="kys12"></span></p>
+        <p>13. <span id="kys13"></span></p>
+        <p>14. <span id="kys14"></span></p>
+      </div>
+      </div>
+      <p id="pisteet"></p>
+    </div>
+      
+
         </section>
 
         <footer class="row text-center m-auto fixed-bottom">

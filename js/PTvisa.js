@@ -1,6 +1,7 @@
 /// <reference path="jquery-3.6.0.min.js" /> 
-/*
-* Your name: Pietari Tanner
+/* 
+    Created on : 01.04.2021
+    Author     : Pietari Tanner
 */
 
 // document ready function
@@ -68,7 +69,7 @@ $(function () {
         }, 1000);
 
         //Tuo painikkeella esiin seuraavan kysymyksen, alla oleva koodi 
-        //tekee asettaa 2.kysymykselle samat toiminnat kuin edellä
+        //tekee 2.kysymykselle samat toiminnat kuin edellä
         $("#seuraava1").on("click", function () {
             $("[name=kys2]").show(1000);
 
@@ -90,7 +91,6 @@ $(function () {
                     $("[name=kysymys2]").prop("disabled", true);
                     $("[name=vas2]").show(2000);
                     $("#aikaa2").hide();
-
                 }
                 $("#vastaa2").on("click", function () {
                     let valinta = Number($("[name=kysymys2]:checked").val());
@@ -105,6 +105,7 @@ $(function () {
                     $("#aikaa2").hide();
                 });
             }, 1000);
+
             //Kysymys 3 esille
             $("#seuraava2").on("click", function () {
                 $("[name=kys3]").show(1000);
@@ -127,7 +128,6 @@ $(function () {
                         $("[name=kysymys3]").prop("disabled", true);
                         $("[name=vas3]").show(2000);
                         $("#aikaa3").hide();
-
                     }
                     $("#vastaa3").on("click", function () {
                         let valinta = Number($("[name=kysymys3]:checked").val());
@@ -143,6 +143,7 @@ $(function () {
                     });
 
                 }, 1000);
+
                 //Kysymys 4 esille
                 $("#seuraava3").on("click", function () {
                     $("[name=kys4]").show(1000);
@@ -165,7 +166,6 @@ $(function () {
                             $("[name=kysymys4]").prop("disabled", true);
                             $("[name=vas4]").show(2000);
                             $("#aikaa4").hide();
-
                         }
                         $("#vastaa4").on("click", function () {
                             let valinta = Number($("[name=kysymys4]:checked").val());
@@ -179,9 +179,11 @@ $(function () {
                             $("#aikaa4").hide();
                         });
                     }, 1000);
+
                     //Kysymys 5 esille
                     $("#seuraava4").on("click", function () {
                         $("[name=kys5]").show(1000);
+
                         let secondsBetweenActions = 30;
                         let secondsRemaining = secondsBetweenActions;
 
@@ -220,7 +222,7 @@ $(function () {
         });
     });
 
-    //lataa sivun uudelleen uutta testiä varten
+    //lataa sivun uudelleen
     $("#uusi").on("click", function () {
         location.reload();
     });
@@ -250,8 +252,24 @@ $(function () {
             pisteet++
         }
         $("[name=kys6]").show(2000);
-        $("#pisteet").html(pisteet + " /5");
+        //Animoitu pisteiden paljastus
+        pisteet = $("#pisteet").html(pisteet + " /5");
+        pisteet.animate({ fontSize: '0px' }, "slow");
+        pisteet.animate({ fontSize: '40px' }, "slow");
+        pisteet.animate({ fontSize: '10px' }, "slow");
+        pisteet.animate({ fontSize: '70px' }, "slow");
+        pisteet.animate({ fontSize: '20px' }, "slow");
+        pisteet.animate({ fontSize: '100px' }, "slow");
+        pisteet.animate({ fontSize: '30px' }, "slow");
+        pisteet.animate({ fontSize: '130px' }, "slow");
+        pisteet.animate({ deg: 720, }, {
+            duration: 2000, step: function (now) {
+                $(this).css({ transform: 'rotate(' + now + 'deg)' });
+            }
+        }
+        );
     });
+
     //vihjeet
     $(".fa").on("click", function () {
         $(this).parent().next().slideToggle(2000, function () {
