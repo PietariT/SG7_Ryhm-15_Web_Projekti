@@ -1,20 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marko+One&display=swap');
+
+
 .teroback {
     background-image: url("elefantti.jpg");
     background-size: auto;
-}
-label.radio span {
-    padding: 4px 0px;
-    border: 3px solid;
-    display: inline-block;
-    width: 100px;
-    text-align: center;
-    border-radius: 10px;
-    margin-top: 7px;
-    
+    border-style: double;
+    border-color:white;
 }
 
 .container {
-    color:#7E159E;
+    color:white;
+    border-radius: 10px;
 }
 
 .projekti {
@@ -23,4 +20,60 @@ label.radio span {
 
 .kyssäri {
     color: black;
+}
+
+.aloitusinfo {
+    margin-left: 8em;
+    padding: 10px 10px 10px 20px;
+    color: black;
+    border-radius: 10px;
+    background-color: rgba(187, 192, 155, 0.9);
+    border-style: dotted;
+    border-color: white;
+    letter-spacing: 2px;
+    
+
+}
+
+h1, p {
+    font-family: 'Original Surfer', cursive; 
+}
+
+.aloitusnappi {
+    margin-left: 7.2em;
+    size: 30px;
+}
+
+.bg-image {
+    background-image: url("käärme.jpg");
+    background-repeat: round;
+    background-size: 100%;
+}
+
+.bg-image2 {
+    background-image: url("karhu.jpg");
+    background-repeat: round;
+    background-size: 100%;
+
+}
+
+.bg-image3 {
+    background-image: url("ahven.jpg");
+    background-repeat: round;
+    background-size: 100%;
+
+}
+
+.bg-image4 {
+    background-image: url("leijona.jpg");
+    background-repeat: round;
+    background-size: 100%;
+
+}
+
+.bg-image5 {
+    background-image: url("naali.jpg");
+    background-repeat: round;
+    background-size: 100%;
+
 }

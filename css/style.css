@@ -4,6 +4,23 @@ Persian Green #339989
 Middle Blue Green #7DE2D1
 Snow #FFFAFB */
 
+@import url('https://fonts.googleapis.com/css2?family=Almendra&family=Marko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almendra&family=Marko+One&family=Yanone+Kaffeesatz:wght@300&display=swap');
+
+
+h1 {
+	font-family: 'Almendra', serif;
+	font-family: 'Marko One', serif;
+}
+
+p {
+	font-family: 'Almendra', serif;
+	font-family: 'Marko One', serif;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	letter-spacing: 2px;
+	
+}
+
 body {
 	background-color: #131515;
 	overflow-x: hidden;
