@@ -1,10 +1,11 @@
 /// <reference path="jquery-3.6.0.min.js" /> 
-/*
-* Your name: Pietari Tanner
+/* 
+    Created on : 01.04.2021
+    Author     : Pietari Tanner
 */
 
-// Globaali muuttuja pisteille
-let pisteet = [14];
+
+$(".kuva").hide();
 
 $(function () {
     $("#vastaa").on("click", function(){
@@ -27,7 +28,7 @@ $(function () {
             $(".1_pysty").addClass("oikein");
         } else {
             $(".1_pysty").addClass("väärin");
-            pisteet--
+           
         }
         $(".1_pysty").on("focusin", function(){
             $(".1_pysty").removeClass("väärin");
@@ -45,7 +46,7 @@ $(function () {
             $(".2_pysty").addClass("oikein");
         } else {
             $(".2_pysty").addClass("väärin");
-            pisteet--
+            
         }
         $(".2_pysty").on("focusin", function(){
             $(".2_pysty").removeClass("väärin");
@@ -66,7 +67,7 @@ $(function () {
             $(".3_pysty").addClass("oikein");
         } else {
             $(".3_pysty").addClass("väärin");
-            pisteet--
+            
         }
         $(".3_pysty").on("focusin", function(){
             $(".3_pysty").removeClass("väärin");
@@ -87,7 +88,7 @@ $(function () {
             
         } else {
             $(".4_pysty").addClass("väärin");
-            pisteet--
+           
         }
         $(".4_pysty").on("focusin", function(){
             $(".4_pysty").removeClass("väärin");
@@ -106,7 +107,7 @@ $(function () {
             $(".5_pysty").addClass("oikein");
         } else {
             $(".5_pysty").addClass("väärin");
-            pisteet--
+          
         }
         $(".5_pysty").on("focusin", function(){
             $(".5_pysty").removeClass("väärin");
@@ -127,7 +128,7 @@ $(function () {
             
         } else {
             $(".6_pysty").addClass("väärin");
-            pisteet--
+           
         }
         $(".6_pysty").on("focusin", function(){
             $(".6_pysty").removeClass("väärin");
@@ -149,7 +150,7 @@ $(function () {
             
         } else {
             $(".7_pysty").addClass("väärin");
-            pisteet--
+          
         }
         $(".7_pysty").on("focusin", function(){
             $(".7_pysty").removeClass("väärin");
@@ -175,7 +176,7 @@ $(function () {
             
         } else {
             $(".8_vaaka").addClass("väärin");
-            pisteet--
+          
         }
         $(".8_vaaka").on("focusin", function(){
             $(".8_vaaka").removeClass("väärin");
@@ -198,7 +199,7 @@ $(function () {
             
         } else {
             $(".9_vaaka").addClass("väärin");
-            pisteet--
+        
         }
         $(".9_vaaka").on("focusin", function(){
             $(".9_vaaka").removeClass("väärin");
@@ -220,7 +221,7 @@ $(function () {
           
         } else {
             $(".10_vaaka").addClass("väärin");
-            pisteet--
+          
         }
         $(".10_vaaka").on("focusin", function(){
             $(".10_vaaka").removeClass("väärin");
@@ -241,7 +242,7 @@ $(function () {
             
         } else {
             $(".11_vaaka").addClass("väärin");
-            pisteet--
+          
         }
         $(".11_vaaka").on("focusin", function(){
             $(".11_vaaka").removeClass("väärin");
@@ -262,7 +263,7 @@ $(function () {
            
         } else {
             $(".12_vaaka").addClass("väärin");
-            pisteet--
+      
         }
         $(".12_vaaka").on("focusin", function(){
             $(".12_vaaka").removeClass("väärin");
@@ -283,7 +284,7 @@ $(function () {
             
         } else {
             $(".13_vaaka").addClass("väärin");
-            pisteet--
+       
         }
         $(".13_vaaka").on("focusin", function(){
             $(".13_vaaka").removeClass("väärin");
@@ -304,18 +305,17 @@ $(function () {
             
         } else {
             $(".14_vaaka").addClass("väärin");
-            pisteet--
+       
         }
         $(".14_vaaka").on("focusin", function(){
             $(".14_vaaka").removeClass("väärin");
             $(".14_vaaka").removeClass("oikein");
         });
         
-
+/*
     });
-    $("#piste").on("click", function(){
-        $("#pisteet").html(pisteet);
-        //$("#piste").prop("disabled", true);
+    $("#vastaa").on("click", function(){
+  
         $("#kys1").html("SHARPENER");
         $("#kys2").html("RAT");
         $("#kys3").html("PEPPER");
@@ -329,6 +329,66 @@ $(function () {
         $("#kys11").html("AWAY");
         $("#kys12").html("PAPER");
         $("#kys13").html("RULES");
-        $("#kys14").html("APPLE");
+        $("#kys14").html("APPLE");*/
+  
+        if (sana1_v === "sharpener",
+            sana2_v === "rat",
+            sana3_v === "pepper",
+            sana4_v === "cheap",
+            sana5_v === "card",
+            sana6_v === "rare",
+            sana7_v === "online",
+            sana8_p === "strawberry",
+            sana9_p === "teacher",
+            sana10_p === "purple",
+            sana11_p === "again",
+            sana12_p === "paper",
+            sana13_p === "rules",
+            sana14_p === "apple") {
+            $(".kuva").show(1000)
+            $("#kys1").html("SHARPENER");
+            $("#kys2").html("RAT");
+            $("#kys3").html("PEPPER");
+            $("#kys4").html("CHEAP");
+            $("#kys5").html("CARD");
+            $("#kys6").html("RARE");
+            $("#kys7").html("MINUTE");
+            $("#kys8").html("STRAWBERRY");
+            $("#kys9").html("TEACHER");
+            $("#kys10").html("PURPLE");
+            $("#kys11").html("AWAY");
+            $("#kys12").html("PAPER");
+            $("#kys13").html("RULES");
+            $("#kys14").html("APPLE");
+        }
+  
     });
+    // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+  $(".pohja").hide();
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+  $(".pohja").show();
+}
+let popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+    return new bootstrap.Popover(popoverTriggerEl);
+});
+
+  
 });
