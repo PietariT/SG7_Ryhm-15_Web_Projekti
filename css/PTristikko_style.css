@@ -52,13 +52,6 @@ body {
 	text-transform: uppercase;
 	font-weight: bolder;
 }
-/* animaatio *//*
-#pisteet {
-	animation: mymove 2s infinite;
-}
-@keyframes mymove {
-	100% {transform: rotate(360deg);}
-  }/*
 
 /* Värit */
 .väärin {
@@ -87,6 +80,7 @@ body {
 	border-radius: 10px;
 	font-family: 'Kotta One', serif;
 	font-weight: bold;
+	box-shadow: 0 10px 15px rgba(0,0,0,2.50);
   }
 
 h1 {
@@ -106,18 +100,10 @@ main {
 	background-image: url("../img/london-bridge.jpg");
 	background-size: 100% 100%;
 }
-.nappi {
-	margin-bottom: 10px;
-	background-color: #339989;
-	color: black;
-	border: solid black 2px;
-	font-family: 'Marko One', serif;
-	letter-spacing: 1px;
-
-}
 .keskus {
 	margin-bottom: 200px;
 }
+
 @media screen and (min-width: 360px) {
 	  .pohja td {
 		border: 2px solid #339989;
@@ -164,10 +150,6 @@ main {
 		margin: auto;
 		margin-bottom: 100px;
 	  }
-	  .btn {
-		  margin-bottom: 3px;
-		  
-	  }
 	}
 	@media screen and (min-width: 576px) {
 		.pohja td {
@@ -213,10 +195,6 @@ main {
 		  align-self: center;
 		  margin: auto;
 		  margin-bottom: 100px;
-		}
-		.btn {
-		margin-bottom: 5px;
-			
 		}
 	  }
 	  @media screen and (max-width: 648px) {
@@ -371,4 +349,46 @@ main {
 		.modal-content {
 		  width: 100%;
 		}
+		/* napin efekti*/
 	  }
+	  .nappi {
+		border: none;
+		display: block;
+		text-align: center;
+		cursor: pointer;
+		text-transform: uppercase;
+		outline: none;
+		overflow: hidden;
+		position: relative;
+		color: #339989;
+		font-weight: bold;
+		font-size: 20px;
+		background-color: #222;
+		padding: 10px 60px;
+		margin-bottom: 10px;
+		box-shadow: 0 5px 15px rgba(0,0,0,2.50);
+		font-family: 'Kotta One', serif;
+		height: 70px;
+	  }
+	  .nappi span {
+		position: relative; 
+		z-index: 1;
+	  }
+	  .nappi:after {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 490%;
+		width: 140%;
+		background: #339989;
+		-webkit-transition: all 1s ease-in-out;
+		transition: all 1s ease-in-out;
+		-webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+		transform: translateX(-98%) translateY(-25%) rotate(45deg);
+	  }
+	  .nappi:hover:after {
+		-webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+		transform: translateX(-9%) translateY(-25%) rotate(45deg);
+	  }
+	 

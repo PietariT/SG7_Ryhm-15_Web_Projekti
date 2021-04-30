@@ -199,6 +199,13 @@ nav {
 	position: relative;
 	z-index: 100;
 }
+.dropdown-menu {
+	background-color:#339989;
+}
+.dropdown-item:hover {
+	background-color:black;
+	color: white;
+}
 @media all and (max-width: 992px) {
 	.Ptesti1 {
 		font-size: 10px;
