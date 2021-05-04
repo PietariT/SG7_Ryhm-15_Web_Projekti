@@ -14,7 +14,7 @@ body {
 
 .tausta {
   background-image: linear-gradient(#131515 1%, transparent),
-    url('liitutaulu.jpg');
+    url('../img/liitutaulu.jpg');
   background-color: #131515;
   background-size: 100%;
   background-size: cover;
