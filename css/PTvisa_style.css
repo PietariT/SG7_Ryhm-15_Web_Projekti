@@ -2,3 +2,101 @@
     Created on : 01.04.2021
     Author     : Pietari Tanner
 */
+/*Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+/*Taustakuva*/
+.backg {
+  background-image: linear-gradient(to bottom left, #a3ecec 1%, transparent),
+    url("../img/compass1.jpg");
+  background-size: 100%;
+}
+
+/*Teksti laatikko*/
+.tekst {
+  font-family: 'Lexend', sans-serif;
+  font-weight: bold;
+  background-color: rgba(125, 226, 209, 0.5);
+  border-collapse: inherit;
+  border-radius: 10px;
+  box-shadow: 20px 20px 10px 10px #2b2c28;
+  max-width: 550px;
+}
+
+/*Kysymys laatikko*/
+.laatikko {
+  background-color: rgba(125, 226, 209, 0.5);
+  border-collapse: collapse;
+  border-radius: 10px;
+  box-shadow: 15px 15px 10px 10px #2b2c28;
+  margin-bottom: 50px;
+  padding-top: 10px;
+  max-width: 550px;
+}
+.palkinto {
+  font-family: 'Parisienne', cursive;
+  font-weight: bolder;
+}
+
+/*Peukalot*/
+.form-check .fa {
+  display: flex;
+}
+
+/*Modal ikkunoiden tyylit*/
+.modal-body {
+  font-family: 'Lexend', sans-serif;
+  font-weight: bold;
+  background-color: rgba(150, 226, 209, 0.2);
+  border-collapse: inherit;
+  box-shadow: inset 1px 1px 5px 5px #2b2c28;
+  padding: 20px;
+}
+.modal-title {
+  font-family: 'Jua', sans-serif;
+}
+.modal-header,
+.modal-footer {
+  box-shadow: inset 1px 1px 5px 5px #2b2c28;
+  background-color: #7de2d1;
+}
+
+/*vihjeet piiloon*/
+.hided {
+  display: none;
+}
+/*Kysymys boxien sisällä olevat vastaus boxit */
+.vastausboxi {
+  font-family: 'Lexend', sans-serif;
+  font-weight: bold;
+  background-color: rgba(150, 226, 209, 0.2);
+  border-collapse: inherit;
+  border-radius: 10px;
+  box-shadow: inset 5px 5px 10px 10px #2b2c28;
+  padding: 20px;
+}
+/*Nappien tyyli*/
+.btn {
+  min-width: 150px;
+  font-family: 'Lexend', sans-serif;
+}
+/*Fontteja*/
+h3 {
+  font-family: 'Jua', sans-serif;
+}
+h1 {
+  font-family: 'Jua', sans-serif;
+  font-size: 60px;
+}
+.hided {
+  font-family: 'Lexend', sans-serif;
+  font-weight: bold;
+}
+.tar {
+  font-family: 'Jua', sans-serif;
+  font-size: 22px;
+  letter-spacing: 3px;
+}

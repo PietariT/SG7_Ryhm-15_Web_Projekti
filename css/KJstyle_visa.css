@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+
+
+/************************************** 
+*    Created on : 02.04.2021          *
+*    Author     : Katariina Järvenpää *
+**************************************/
+
+.sivu {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #2B2C28;
+}
+
+
+
+h2 {
+    font-family: 'New Tegomin', serif;
+    color:teal;
+} 
+
+.piilota{
+    display:none;
+}
+
+.aloita,
+.pelaajalle,
+.visa1,
+.visa2, 
+.visa3, 
+.visa4, 
+.visa5,
+.tulos{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.pelaajalle,
+.visa1,
+.visa2, 
+.visa3, 
+.visa4, 
+.visa5,
+.tulos {
+    opacity: 1;
+    z-index: 5;
+
+    transform: translate(-50%, -50%) scale(1);
+}
+.pelaajalle .pelaajalle_otsikko{
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    border-radius: 5px 5px 0 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+.aloita button{
+    background-color:lightgreen;
+    font-size: 20px;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer; 
+}
+.pelaajalle{
+    background-color: aquamarine;
+    max-width: 450px;
+    border-radius: 10px;
+    transform: translate(-50%, -50%) scale(0.9);
+    pointer-events: none;
+    transition: all 0.3s ease;
+}  
+
+.painikkeet{
+    background-color:lightgreen;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    pointer-events: auto;
+    cursor: pointer; 
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-top: 1px solid lightgrey;
+
+
+
+}
+#aloita{
+    background-color:lightgreen;
+    font-size: 20px;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer; 
+}
+#aloita a{
+
+color:black;
+}
+
+#lopeta {
+    background-color:rgb(61, 161, 66);
+    font-size: 20px;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+#jatka,
+#jatka1,
+#jatka2,
+#jatka3,
+#jatka4,
+#uudestaa {
+    background-color:lightgreen;
+    font-size: 20px;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+.pelaajalle_otsikko{
+    height: 50px;
+    border-bottom:2px dotted cadetblue;
+    font-size: 30px;
+}
+
+.info {
+    margin: 5px 0;
+}
+.info span {
+    font-weight: bold;
+    color:mediumseagreen;
+}
+.lopeta:hover {
+    color:oldlace;
+    background-color: lightgreen;
+}
+.pelaajalle .saannot{
+    padding: 15px 30px;
+}
+.tulos{
+    background: aquamarine;
+    border-radius: 5px;
+    display: flex;
+    padding: 25px 30px;
+    width: 650px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transform: translate(-50%, -50%) scale(0.9);
+    transition: all 0.3s ease;
+}
+.visa1,
+.visa2, 
+.visa3, 
+.visa4, 
+.visa5{
+    background-color: aquamarine;
+    width: 650px;
+    border-radius: 10px;
+    transform: translate(-50%, -50%) scale(0.9);
+    transition: all 0.3s ease;
+}
+
+.visa1 footer,
+.visa2 footer,
+.visa3 footer,
+.visa4 footer,
+.visa5 footer{
+    background-color:rgb(61, 161, 66);
+    display: flex;
+}
+.taulukko{
+    height: 80px;
+    padding: 0 25px;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px 10px 0px 0px;
+
+} 
+.taulukko .ajastin  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+    height: 35px;
+    background-color: aqua;
+    border: 1px;
+}
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.seuraava {
+    background-color:lightgreen;
+    font-size: 20px;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin: 10px 10px 10px 10px;
+
+}
+
+.kysymysmaara {
+    font-size: x-large;
+    margin: 10px 10px 10px 10px;
+}
+
+.tulos .lopputeksti .tulosteksti {
+    display: flex;
+    align-items: center;
+    color: #ddd
+
+}
+#eteneminen,
+#eteneminen1,
+#eteneminen2,
+#eteneminen3,
+#eteneminen4 {
+    width: 100%;
+    height: 5px;
+    position: relative;
+    background-color: #4CAF50;
+}
+  
+#aikajana {
+    background-color: #ddd;
+    width: 10px;
+    height: 5px;
+    position: absolute;
+}
+
+.kysymys {
+    background-color: #ddd;
+    position: absolute;
+} 
+
+.piilota {
+    display: none;
+}
+.wrong {
+    background-color: darkred;
+}
+
+.right {
+    background-color: darkgreen;
+    font-weight: bold;
+}

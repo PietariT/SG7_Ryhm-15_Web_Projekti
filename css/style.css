@@ -1,18 +1,58 @@
-
-img {
-    height: 600px;
-}
 /* Eerie black #131515
 Jet #2B2C28
 Persian Green #339989
 Middle Blue Green #7DE2D1
 Snow #FFFAFB */
 
+@import url('https://fonts.googleapis.com/css2?family=Almendra&family=Marko+One&family=Yanone+Kaffeesatz:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Volkhov&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&family=Volkhov&display=swap');
+
+h1 {
+	font-family: 'Almendra', serif;
+}
+
+p {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	letter-spacing: 2px;
+	
+}
+#carousel p{
+	font-family: 'Volkhov', serif;
+	font-size: 18px;
+	background-color: rgba(0, 0, 0, 0.7);
+	border-radius: 5px;
+}
+#carousel h4{
+	font-family: 'Oxygen', sans-serif;
+	font-size: 25px;
+	letter-spacing: 5px;
+	background-color: rgba(0, 0, 0, 0.7);
+	border-radius: 5px;
+}
+/*#carousel :hover{
+	background-color:  #012e27;;
+	border-radius: 5px;
+}*/
+
+
 body {
+<<<<<<< HEAD
 	background-color: #339989;
 
 }
 
+=======
+	background-color: #131515;
+	overflow-x: hidden;
+}
+
+
+.container-fluid{
+    padding: 0;
+}
+
+>>>>>>> 14e0a55483218ad22e97d02bcb57e606247d84d6
 .tausta{
 	background-image: linear-gradient(#131515 1%, transparent), url("Untitled.png") ;	
 	background-size: 100%;
@@ -25,14 +65,16 @@ body {
     transform: skew(0deg, -5deg) translateY(-82px);
 	background-size: 100%;
 	opacity: 90%;
+
 }
 .Ptesti{
 	padding: 80px 0px;
-    transform: skew(0deg, 5deg)
+    transform: skew(0deg, 5deg);
+
 }
 
 .Ptesti p{
-	font-size: 1.2em;
+	font-size: 1.5em;
 	color: #fff;
 	margin: 0px;
 	padding: 0px;
@@ -42,7 +84,7 @@ body {
 }
 
 .Ptesti h1 {
-	font-size: 2.8em;
+	font-size: 3.5em;
 	color: #fff;
 	margin: 0px;
 	padding: 0px;
@@ -86,13 +128,17 @@ a{
 
 .Ptesti1 h1{
 	padding: 0 200px 0px;
+<<<<<<< HEAD
 	font-size: 3em;
+=======
+	font-size: 4em;
+>>>>>>> 14e0a55483218ad22e97d02bcb57e606247d84d6
 	color: #fff;
 	margin: 0px;
 	padding: 0px;
 	padding-bottom: 10px;
 	line-height: 1.4em;
-	width: 100%
+	width: 100%;
 }
 
 
@@ -109,12 +155,13 @@ a{
 footer {
 	background-color:#131515;
 	color: #fff;
-	position:relative
+	position:relative;
 }
 
 nav {
 	background-color: #131515;
 }
+<<<<<<< HEAD
 
 @media all and (min-width: 992px) {
 	.navbar .nav-item .dropdown-menu{ display: none; }
@@ -122,4 +169,71 @@ nav {
 	.navbar .nav-item .dropdown-menu{ margin-top:0; }
 }
 
+=======
+>>>>>>> 14e0a55483218ad22e97d02bcb57e606247d84d6
 
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}
+/* Tietoja sivun tyylejä */
+.tekstiTietojaSivu{
+	background-color:  #131515;
+    padding: 100px;
+    transform: skew(0deg, -5deg) translateY(-82px);
+	background-size: 100%;
+	opacity: 90%;
+	position: relative;
+	z-index: 0;
+	height: 300px;
+	margin-top: -400px;
+	box-shadow: 10px 5px 15px 15px #339989;
+	min-height: 480px;
+}
+.PtestiTietojaSivu{
+	padding: 80px 0px;
+    transform: skew(0deg, 5deg);
+	position: absolute;
+	z-index: 100;
+}
+
+.carousel {
+	z-index: 1;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+.carousel-inner {
+	box-shadow: 5px 5px 10px 10px #131515;
+}
+
+.button1 {
+	background-color: #339989;
+}
+.Ptesti1{
+	position: relative;
+	z-index: 100;
+	font-size: 13px;
+}
+.button1 {
+	position: relative;
+	z-index: 100;
+}
+.dropdown-menu {
+	background-color:#339989;
+}
+.dropdown-item:hover {
+	background-color:black;
+	color: white;
+}
+@media all and (max-width: 992px) {
+	.Ptesti1 {
+		font-size: 10px;
+	}
+}
+@media all and (max-width: 576px) {
+	.Ptesti1 {
+		font-size: 8px;
+	}
+}
