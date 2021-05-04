@@ -254,16 +254,16 @@ $(function () {
         $("#kys6").show(2000);
         //Animoitu pisteiden paljastus
         pisteet = $("#pisteet").html(pisteet + " /5");
-        pisteet.animate({ fontSize: '0px' }, "slow");
-        pisteet.animate({ fontSize: '40px' }, "slow");
+        pisteet.animate({ fontSize: '0px' }, "very slow");
+        /*pisteet.animate({ fontSize: '40px' }, "slow");
         pisteet.animate({ fontSize: '10px' }, "slow");
         pisteet.animate({ fontSize: '70px' }, "slow");
         pisteet.animate({ fontSize: '20px' }, "slow");
         pisteet.animate({ fontSize: '100px' }, "slow");
-        pisteet.animate({ fontSize: '30px' }, "slow");
+        pisteet.animate({ fontSize: '30px' }, "slow");*/
         pisteet.animate({ fontSize: '130px' }, "slow");
         pisteet.animate({ deg: 720, }, {
-            duration: 2000, step: function (now) {
+            duration: 3000, step: function (now) {
                 $(this).css({ transform: 'rotate(' + now + 'deg)' });
             }
         }

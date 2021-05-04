@@ -20,7 +20,7 @@
   font-family: 'Lexend', sans-serif;
   font-weight: bold;
   font-size: 20px;
-  background-color: rgba(125, 226, 209, 0.5);
+  background-color: rgba(125, 226, 209, 0.7);
   border-collapse: inherit;
   border-radius: 10px;
   box-shadow: 20px 20px 10px 10px #2b2c28;
@@ -29,7 +29,7 @@
 
 /*Kysymys laatikko*/
 .laatikko {
-  background-color: rgba(125, 226, 209, 0.5);
+  background-color: rgba(125, 226, 209, 0.7);
   border-collapse: collapse;
   border-radius: 10px;
   box-shadow: 15px 15px 10px 10px #2b2c28;
@@ -99,7 +99,6 @@ h1 {
 }
 /*painikkeiden ja radio buttoneiden tyylit */
 .nappi {
- /* border: solid #7DE2D1 3px;*/
   border-radius: 15px;
   min-width: 150px;
   font-family: 'Lexend', sans-serif;
