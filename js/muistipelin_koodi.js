@@ -1,18 +1,18 @@
 
-// By: Roni Junttila
+// Author: Roni Junttila
 
 function modal1() {
-    let myModal = new bootstrap.Modal(document.getElementById('congratulations'), {backdrop: "static"})
+    let myModal = new bootstrap.Modal(document.getElementById('congratulations'), { backdrop: "static" })
     myModal.show();
     return;
-  }
+}
 
-  $('#congratulations').on('show.bs.modal', function () {
+$('#congratulations').on('show.bs.modal', function () {
     $('.modal .modal-dialog').attr('class', 'modal-dialog animate__animated animate__zoomInDown');
-  })
-  $('#congratulations').on('hide.bs.modal', function () {
-  $('.modal .modal-dialog').attr('class', 'modal-dialog animate__animated animate__zoomOutLeft');
-  })  
+})
+$('#congratulations').on('hide.bs.modal', function () {
+    $('.modal .modal-dialog').attr('class', 'modal-dialog animate__animated animate__zoomOutLeft');
+})
 
 //muuttujat
 let pinkka = document.getElementById("korttiPakka");
@@ -36,15 +36,15 @@ function shuffle(array) {
     }
     return array;
 };
- 
+
 //kortin aukasu
-let NäytäKortti = function (){
-    $(this).children().removeClass("invisible") 
-    $(this).attr("style", "background-color: #028dff") 
+let NäytäKortti = function () {
+    $(this).children().removeClass("invisible")
+    $(this).attr("style", "background-color: #028dff")
     $(this).toggleClass("disabled")
 };
 
-for (let i = 0; i < cards.length; i++){
+for (let i = 0; i < cards.length; i++) {
     card = cards[i];
     $(card).on("click", NäytäKortti);
     $(card).on("click", KortinAukaisu);
@@ -54,17 +54,17 @@ for (let i = 0; i < cards.length; i++){
 document.body.onload = startGame();
 
 //pelin aloitus ja korttien varsinainen sekeoitus
-function startGame(){
+function startGame() {
     $(card).removeClass("invisible")
     avatutKortit = [];
     cards = shuffle(cards);
-     for (let i = 0; i < cards.length; i++){
+    for (let i = 0; i < cards.length; i++) {
         pinkka.innerHTML = "";
-        [].forEach.call(cards, function(item) {
+        [].forEach.call(cards, function (item) {
             pinkka.appendChild(item);
         });
 
-    } 
+    }
 
 }
 
@@ -75,8 +75,8 @@ function KortinAukaisu() {
     $("#siirrot").html(totalAukastujenMäärä)
     avatutKortit.push(this);
     let lenght = avatutKortit.length;
-    if(lenght === 2){
-        if(avatutKortit[0].type === avatutKortit[1].type){
+    if (lenght === 2) {
+        if (avatutKortit[0].type === avatutKortit[1].type) {
             $(avatutKortit[0]).addClass("match", "disable").prop("disabled", true).attr("style", "background-color: #00e727;");
             $(avatutKortit[1]).addClass("match", "disable").prop("disabled", true).attr("style", "background-color: #00e727;");
             avatutKortit = [];
@@ -84,31 +84,31 @@ function KortinAukaisu() {
         } else {
             $(avatutKortit[0]).attr("style", "background-color: #e2043b;");
             $(avatutKortit[1]).attr("style", "background-color: #e2043b;");
-            Array.prototype.filter.call(cards, function(card){ 
+            Array.prototype.filter.call(cards, function (card) {
                 $(card).addClass("disabled", true)
             });
-            setTimeout(function(){
+            setTimeout(function () {
                 $(avatutKortit[0]).removeAttr("style")
                 $(avatutKortit[1]).removeAttr("style")
                 $(".card").removeClass("animate__animated animate__bounceIn")
                 $(avatutKortit[1]).children().addClass("invisible")
                 $(avatutKortit[0]).children().addClass("invisible")
-                Array.prototype.filter.call(cards, function(card){ 
+                Array.prototype.filter.call(cards, function (card) {
                     $(card).removeClass("disabled", false)
                     $(".match").prop("disabled", false);
-                    for(let i = 0; i < 8; i++){ 
+                    for (let i = 0; i < 8; i++) {
                         $(".match").addClass("disabled", true);
                     }
                 });
                 avatutKortit = [];
-            },500);
+            }, 500);
         }
     }
 };
 
 //modal ikkunaan tähdet
-function congratulations(){
-    if (parit === 8){
+function congratulations() {
+    if (parit === 8) {
         modal1()
         if (totalAukastujenMäärä <= 20) {
             $("#tähti1").addClass("fa fa-star")
@@ -126,7 +126,7 @@ function congratulations(){
             $("#tähti5").addClass("fa fa-star-half")
         }
 
-        else if ( totalAukastujenMäärä <= 25) {
+        else if (totalAukastujenMäärä <= 25) {
             $("#tähti1").addClass("fa fa-star")
             $("#tähti2").addClass("fa fa-star")
             $("#tähti3").addClass("fa fa-star")
@@ -140,24 +140,24 @@ function congratulations(){
             $("#tähti4").addClass("fa fa-star-half")
         }
 
-        else if ( totalAukastujenMäärä <= 30) {
+        else if (totalAukastujenMäärä <= 30) {
             $("#tähti1").addClass("fa fa-star")
             $("#tähti2").addClass("fa fa-star")
             $("#tähti3").addClass("fa fa-star")
         }
 
-        else if ( totalAukastujenMäärä <= 33) {
+        else if (totalAukastujenMäärä <= 33) {
             $("#tähti1").addClass("fa fa-star")
             $("#tähti2").addClass("fa fa-star")
             $("#tähti3").addClass("fa fa-star-half")
         }
 
-        else if ( totalAukastujenMäärä <= 35) {
+        else if (totalAukastujenMäärä <= 35) {
             $("#tähti1").addClass("fa fa-star")
             $("#tähti2").addClass("fa fa-star")
         }
 
-        else if ( totalAukastujenMäärä <= 37) {
+        else if (totalAukastujenMäärä <= 37) {
             $("#tähti1").addClass("fa fa-star")
             $("#tähti2").addClass("fa fa-star-half")
         }
