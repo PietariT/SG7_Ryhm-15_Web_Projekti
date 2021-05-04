@@ -7,6 +7,13 @@ function modal1() {
     return;
   }
 
+  $('#congratulations').on('show.bs.modal', function () {
+    $('.modal .modal-dialog').attr('class', 'modal-dialog animate__animated animate__zoomInDown');
+  })
+  $('#congratulations').on('hide.bs.modal', function () {
+  $('.modal .modal-dialog').attr('class', 'modal-dialog animate__animated animate__zoomOutLeft');
+  })  
+
 //muuttujat
 let pinkka = document.getElementById("korttiPakka");
 let parit1 = document.getElementsByClassName("match");
@@ -30,6 +37,7 @@ function shuffle(array) {
     return array;
 };
  
+//kortin aukasu
 let NäytäKortti = function (){
     $(this).children().removeClass("invisible") 
     $(this).attr("style", "background-color: #028dff") 
@@ -45,6 +53,7 @@ for (let i = 0; i < cards.length; i++){
 
 document.body.onload = startGame();
 
+//pelin aloitus ja korttien varsinainen sekeoitus
 function startGame(){
     $(card).removeClass("invisible")
     avatutKortit = [];
@@ -59,7 +68,9 @@ function startGame(){
 
 }
 
+//kortin parin tarkistus, kortin taustanvärit ja animaatiot
 function KortinAukaisu() {
+    $(this).addClass("animate__animated animate__bounceIn")
     totalAukastujenMäärä++
     $("#siirrot").html(totalAukastujenMäärä)
     avatutKortit.push(this);
@@ -79,6 +90,7 @@ function KortinAukaisu() {
             setTimeout(function(){
                 $(avatutKortit[0]).removeAttr("style")
                 $(avatutKortit[1]).removeAttr("style")
+                $(".card").removeClass("animate__animated animate__bounceIn")
                 $(avatutKortit[1]).children().addClass("invisible")
                 $(avatutKortit[0]).children().addClass("invisible")
                 Array.prototype.filter.call(cards, function(card){ 
@@ -94,6 +106,7 @@ function KortinAukaisu() {
     }
 };
 
+//modal ikkunaan tähdet
 function congratulations(){
     if (parit === 8){
         modal1()
