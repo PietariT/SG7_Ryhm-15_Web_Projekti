@@ -19,6 +19,7 @@
 .tekst {
   font-family: 'Lexend', sans-serif;
   font-weight: bold;
+  font-size: 20px;
   background-color: rgba(125, 226, 209, 0.5);
   border-collapse: inherit;
   border-radius: 10px;
@@ -78,11 +79,6 @@
   box-shadow: inset 5px 5px 10px 10px #2b2c28;
   padding: 20px;
 }
-/*Nappien tyyli*/
-.btn {
-  min-width: 150px;
-  font-family: 'Lexend', sans-serif;
-}
 /*Fontteja*/
 h3 {
   font-family: 'Jua', sans-serif;
@@ -97,6 +93,23 @@ h1 {
 }
 .tar {
   font-family: 'Jua', sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   letter-spacing: 3px;
+  font-weight: lighter;
+}
+/*painikkeiden ja radio buttoneiden tyylit */
+.nappi {
+ /* border: solid #7DE2D1 3px;*/
+  border-radius: 15px;
+  min-width: 150px;
+  font-family: 'Lexend', sans-serif;
+}
+.nappi:hover {
+  background-color: #7DE2D1;
+  color: black;
+  border: solid black 3px;
+}
+.form-check-input:hover {
+  background-color: #7DE2D1;
+  border: solid black 2px;
 }

@@ -11,24 +11,24 @@ $(function () {
     let pisteet = [0];
 
     //Piilottaa kysymykset, vastaukset ja napit
-    $("[name=kys1]").hide();
-    $("[name=kys2]").hide();
-    $("[name=kys3]").hide();
-    $("[name=kys4]").hide();
-    $("[name=kys5]").hide();
-    $("[name=kys6]").hide();
+    $("#kys1").hide();
+    $("#kys2").hide();
+    $("#kys3").hide();
+    $("#kys4").hide();
+    $("#kys5").hide();
+    $("#kys6").hide();
 
     //Piilottaa oikein/väärin iconit
-    $("[name=vas1]").hide();
-    $("[name=vas2]").hide();
-    $("[name=vas3]").hide();
-    $("[name=vas4]").hide();
-    $("[name=vas5]").hide();
+    $(".vas1").hide();
+    $(".vas2").hide();
+    $(".vas3").hide();
+    $(".vas4").hide();
+    $(".vas5").hide();
 
     //Aloittaa visan
     $("#aloita").on("click", function () {
         //Tuo esille ensimmäisen kysymyksen
-        $("[name=kys1]").show(1000);
+        $("#kys1").show(1000);
 
         //Asettaa vastausajan ja näyttää paljon aikaa on jäljellä
         let secondsBetweenActions = 30;
@@ -48,7 +48,7 @@ $(function () {
                 }
                 //Lukitsee vastaus vaihtoehdot ja piilottaa jäljellä olevan ajan
                 $("[name=kysymys1]").prop("disabled", true);
-                $("[name=vas1]").show(2000);
+                $(".vas1").show(2000);
                 $("#aikaa1").hide();
             }
 
@@ -63,7 +63,7 @@ $(function () {
                 }
                 //Lukitsee vastaus vaihtoehdot ja piilottaa jäljellä olevan ajan
                 $("[name=kysymys1]").prop("disabled", true);
-                $("[name=vas1]").show(2000);
+                $(".vas1").show(2000);
                 $("#aikaa1").hide();
             });
         }, 1000);
@@ -71,7 +71,7 @@ $(function () {
         //Tuo painikkeella esiin seuraavan kysymyksen, alla oleva koodi 
         //tekee 2.kysymykselle samat toiminnat kuin edellä
         $("#seuraava1").on("click", function () {
-            $("[name=kys2]").show(1000);
+            $("#kys2").show(1000);
 
             let secondsBetweenActions = 30;
             let secondsRemaining = secondsBetweenActions;
@@ -89,7 +89,7 @@ $(function () {
                         $("#vaarin2").html("Valitettavasti vastauksesi on väärin.");
                     }
                     $("[name=kysymys2]").prop("disabled", true);
-                    $("[name=vas2]").show(2000);
+                    $(".vas2").show(2000);
                     $("#aikaa2").hide();
                 }
                 $("#vastaa2").on("click", function () {
@@ -101,14 +101,14 @@ $(function () {
                         $("#vaarin2").html("Valitettavasti vastauksesi on väärin.");
                     }
                     $("[name=kysymys2]").prop("disabled", true);
-                    $("[name=vas2]").show(2000);
+                    $(".vas2").show(2000);
                     $("#aikaa2").hide();
                 });
             }, 1000);
 
             //Kysymys 3 esille
             $("#seuraava2").on("click", function () {
-                $("[name=kys3]").show(1000);
+                $("#kys3").show(1000);
 
                 let secondsBetweenActions = 30;
                 let secondsRemaining = secondsBetweenActions;
@@ -126,7 +126,7 @@ $(function () {
                             $("#vaarin3").html("Valitettavasti vastauksesi on väärin.");
                         }
                         $("[name=kysymys3]").prop("disabled", true);
-                        $("[name=vas3]").show(2000);
+                        $(".vas3").show(2000);
                         $("#aikaa3").hide();
                     }
                     $("#vastaa3").on("click", function () {
@@ -138,7 +138,7 @@ $(function () {
                             $("#vaarin3").html("Valitettavasti vastauksesi on väärin.");
                         }
                         $("[name=kysymys3]").prop("disabled", true);
-                        $("[name=vas3]").show(2000);
+                        $(".vas3").show(2000);
                         $("#aikaa3").hide();
                     });
 
@@ -146,7 +146,7 @@ $(function () {
 
                 //Kysymys 4 esille
                 $("#seuraava3").on("click", function () {
-                    $("[name=kys4]").show(1000);
+                    $("#kys4").show(1000);
 
                     let secondsBetweenActions = 30;
                     let secondsRemaining = secondsBetweenActions;
@@ -164,7 +164,7 @@ $(function () {
                                 $("#vaarin4").html("Valitettavasti vastauksesi on väärin.");
                             }
                             $("[name=kysymys4]").prop("disabled", true);
-                            $("[name=vas4]").show(2000);
+                            $(".vas4").show(2000);
                             $("#aikaa4").hide();
                         }
                         $("#vastaa4").on("click", function () {
@@ -175,14 +175,14 @@ $(function () {
                                 $("#vaarin4").html("Valitettavasti vastauksesi on väärin.");
                             }
                             $("[name=kysymys4]").prop("disabled", true);
-                            $("[name=vas4]").show(2000);
+                            $(".vas4").show(2000);
                             $("#aikaa4").hide();
                         });
                     }, 1000);
 
                     //Kysymys 5 esille
                     $("#seuraava4").on("click", function () {
-                        $("[name=kys5]").show(1000);
+                        $("#kys5").show(1000);
 
                         let secondsBetweenActions = 30;
                         let secondsRemaining = secondsBetweenActions;
@@ -201,7 +201,7 @@ $(function () {
                                     $("#vaarin5").html("Valitettavasti vastauksesi on väärin.");
                                 }
                                 $("[name=kysymys5]").prop("disabled", true);
-                                $("[name=vas5]").show(2000);
+                                $(".vas5").show(2000);
                                 $("#aikaa5").hide();
                             }
                             $("#vastaa5").on("click", function () {
@@ -212,7 +212,7 @@ $(function () {
                                     $("#vaarin5").html("Valitettavasti vastauksesi on väärin.");
                                 }
                                 $("[name=kysymys5]").prop("disabled", true);
-                                $("[name=vas5]").show(2000);
+                                $(".vas5").show(2000);
                                 $("#aikaa5").hide();
                             });
                         }, 1000);
@@ -251,7 +251,7 @@ $(function () {
         if (kys5 === 3) {
             pisteet++
         }
-        $("[name=kys6]").show(2000);
+        $("#kys6").show(2000);
         //Animoitu pisteiden paljastus
         pisteet = $("#pisteet").html(pisteet + " /5");
         pisteet.animate({ fontSize: '0px' }, "slow");

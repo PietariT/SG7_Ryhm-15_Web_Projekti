@@ -19,7 +19,7 @@ p {
 }
 #carousel p{
 	font-family: 'Volkhov', serif;
-	font-size: 18px;
+	font-size: 15px;
 	background-color: rgba(0, 0, 0, 0.7);
 	border-radius: 5px;
 }
@@ -30,11 +30,6 @@ p {
 	background-color: rgba(0, 0, 0, 0.7);
 	border-radius: 5px;
 }
-/*#carousel :hover{
-	background-color:  #012e27;;
-	border-radius: 5px;
-}*/
-
 
 body {
 	background-color: #131515;
