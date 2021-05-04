@@ -42,7 +42,7 @@ body {
 }
 
 .tausta{
-	background-image: linear-gradient(#131515 1%, transparent), url("Untitled.png") ;	
+	background-image: linear-gradient(#131515 1%, transparent), url("../img/Untitled.png") ;	
 	background-size: 100%;
 	background-color:  #131515;
 }
