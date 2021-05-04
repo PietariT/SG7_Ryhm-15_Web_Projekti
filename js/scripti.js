@@ -4,13 +4,16 @@
 let sivut = [
     'THvisa.html',
     'PTvisa.html',
-    'muistipeli.html'];
+    'muistipeli.html',
+    'matikka_visa.html'
+];
 
 let sivut2 = [
     'KJvisa.html',
     'PTvisa.html',
     'PTristikko.html',
-    'muistipeli.html'
+    'muistipeli.html',
+    'matikka_visa.html'
 ];
 
 $(function () {
