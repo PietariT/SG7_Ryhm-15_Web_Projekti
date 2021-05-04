@@ -35,7 +35,7 @@
 
 	
 	.tausta{
-		background-image: linear-gradient(#131515 1%, transparent), url("matikkavisantausta.jpg");	
+		background-image: linear-gradient(#131515 1%, transparent), url("../img/matikkavisantausta.jpg");	
 		background-color:  #131515;
 		background-position-y: center;
 		background-size: cover;
