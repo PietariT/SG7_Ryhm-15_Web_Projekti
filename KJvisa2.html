@@ -94,17 +94,25 @@
     </header>
 
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-6 col-12">
+      <div class="puistotausta p-5 img-fluid">
+      <div class="row justify-content-center">
           <div class="alku" id="alku">
             <img src="img/jun1.png" alt="jun1" class="img-fluid">
           </div>
 
           <button class="kertaa" id="kertaa">Kertaa</button>
-
+        </div>
           <div class="kertaus piilota" id="kertaus">
-            <img src="img/jun2.png" alt="jun2" class="img-fluid">
+            <p><img src="img/jun2.png" alt="jun2" class="img-fluid"></p>
+            <div id="kertaus1">
+              <p><div>1.Kun kello on <u>yli</u> tietyn ajan, on se ruotsiksi <b>efter</b>.</div>
+              <div>2. Kun pitkä viisari osoittaa kuutosta, eli puolta, on se silloin <b>halv</b>.</div>
+              <div>3. Kun pitkä viisari on ylittänyt puolen kellotaululla, on se aina <b>före</b>.</div>
+              <div>4. Esimerkki: Kello on kaksikymmentä yli kahdeksan. "Klockan är tjugo <b>över</b> åtta.</div></p>
+
+            </div>
           </div>
+
           <button class="aloitetaan piilota" id="alkunen">Aloita</button>
 
 
@@ -269,7 +277,7 @@
 
             <div class="seitseman piilota" id="jun7">
               <img src="img/jun8.png" alt="jun9" class="img-fluid">
-              <span> Sait <span id="vastaukset">0</span>/6 oikein!</span>
+              <p><span> Sait <span id="vastaukset">0</span>/6 oikein!</span></p>
             </div>
 
             <button class="uudestaan piilota">Pelaa uudestaan</button>

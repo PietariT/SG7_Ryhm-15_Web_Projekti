@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Ryhmä 15">
   <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/KJstyle_visa.css">
 </head>
@@ -94,8 +95,8 @@
     </header>
     <div class="taustaelain p-5 img-fluid">
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
+      <div class="row  justify-content-center">
+        <div class="text-center justify-content-center col-12 col-md-3 col-xxl-4">
                 <button id="saannot">Näytä säännöt</button>
                 <div class="saannot">
                   <div class="info">1. Sinulta annetaan eläimen nimi ruotsiksi ja sinun tulee vastata siihen suomeksi</div>
@@ -105,9 +106,9 @@
 
                 </div>
         </div>
+        <section class="row justify-content-center">
 
-          <div class=" col-12 col-lg-6 col-xxl-6">
-                  <div class="visa1 text-center">
+                  <div class="visa1 text-center justify-content-center col-12 col-md-3 col-xxl-4">
                     <h4>Mikä eläin <u>hund</u> on suomeksi?</h4>
                     <p><label for="vastaus1">Vastaus:</label></p>
                       <p><input type="text" id="vastaus1"/></p>
@@ -115,7 +116,7 @@
                     
                     <p><button id="tarkista">Tarkista</button></p>
                   </div>
-                  <div class="visa2 text-center col-12 col-xxl-6">
+                  <div class="visa2 text-center justify-content-center col-12 col-md-3 col-xxl-4">
                    
                     <h4>Mikä eläin <u>svan</u> on suomeksi?</h4>
                     <p><label for="vastaus2">Vastaus:</label></p>
@@ -124,7 +125,9 @@
                     
                     <p><button id="tarkista2">Tarkista</button></p>
                   </div>
-                  <div class="visa3 text-center col-12 col-xxl-6">
+
+
+                  <div class="visa3 text-center justify-content-center col-12 col-md-3 col-xxl-4">
 
             
                     <h4>Mikä eläin <u>isbjörn</u> on suomeksi?</h4>
@@ -134,7 +137,9 @@
                     
                     <p><button id="tarkista3">Tarkista</button></p>
             </div>
-            <div class="visa4 text-center col-12 col-xxl-6">
+          </section>
+          <section class="row justify-content-center">
+            <div class="visa4 text-center col-12 col-md-3 col-xxl-4">
 
               <h4>Mikä eläin <u>katt</u> on suomeksi?</h4>
               <p><label for="vastaus4">Vastaus:</label></p>
@@ -143,7 +148,7 @@
               
               <p><button id="tarkista4">Tarkista</button></p>
               </div>
-            <div class="visa5 text-center col-12 col-xxl-6">
+            <div class="visa5 text-center col-12 col-xxl-4">
      
               <h4>Mikä eläin <u>uggla</u> on suomeksi?</h4>
               <p><label for="vastaus5">Vastaus:</label></p>
@@ -152,7 +157,7 @@
               
               <p><button id="tarkista5">Tarkista</button></p>
           </div>
-          <div class="tulos text-center col-12 col-xxl-6">
+          <div class="tulos text-center justify-content-center col-12 col-md-3 col-xxl-4">
             <p><button id="pisteet">Näytä pisteet</button></p>
             <div class="tuloste">
               <div class="ikoni">
@@ -162,7 +167,7 @@
                 Visa on suoritettu!
               </div>
               <div class="tulosteksti">
-                <span> Sait <span id="oigein">0</span>/5 oikein</span>
+              <span id="oigein"></span>
                 <p><span id="tyhja"></span></p>
                 <div class="palkinto0 piilota">Valitettavasti oikeiden vastauksiesi määrä ei riittänyt palkintoon, yritä uudestaan!</div>
                 <div class="palkinto1 piilota"><a href="img/katt.jpg" target ="_blank"><img src="img/katt_small.jpg" alt="pikkukuva kissa"></a></div>
@@ -174,6 +179,7 @@
               </div>
               </div>
             </div>
+          </section>
             </div>
           </div>
         </div>
