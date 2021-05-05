@@ -16,8 +16,11 @@ body {
 .backg {
   background-image: linear-gradient(to bottom left, #a3ecec 0,35%, transparent),
     url("../img/compass1.jpg");
-  background-size: 100%;
-
+    background-color:  #131515;
+    background-position-y: center;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 /*Teksti laatikko*/
