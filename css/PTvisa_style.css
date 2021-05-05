@@ -114,7 +114,6 @@ h1 {
 .nappi:hover {
   background-color: #7DE2D1;
   color: black;
-  border: solid black 3px;
 }
 .form-check-input:hover {
   background-color: #7DE2D1;
@@ -128,7 +127,6 @@ h1 {
 .nappi1:hover {
   background-color: #7DE2D1;
   color: black;
-  border: solid black 3px;
 }
 
 @media only screen and (max-width: 700px) {
