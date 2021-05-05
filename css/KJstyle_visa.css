@@ -6,7 +6,13 @@
 *    Created on : 02.04.2021          *
 *    Author     : Katariina Järvenpää *
 **************************************/
-
+.taustaelain {
+    background-image: linear-gradient(to bottom left, #a3ecec 0,35%, transparent),
+      url("../img/elainvisatausta.jpg");
+    background-size: 100%;
+  
+  }
+  
 
 h4 {
     font-family: 'New Tegomin', serif;
@@ -19,11 +25,10 @@ h4 {
 }
 
 .saannot .info {
-    color:rgb(115, 211, 211);
+    color:rgb(5, 71, 71);
     font-family: "Montserrat";
 
 }
-
 
 
 #saannot {
@@ -40,6 +45,7 @@ h4 {
 
 .saannot{
     margin-bottom: 20px;
+    background-color: rgb(169, 241, 217);
 }
 
 
@@ -151,7 +157,9 @@ ul {
 .radio-toolbar5 label,
 .radio-toolbar6 label {
     display: inline-block;
-    background-color: rgb(230, 181, 77);
+    color: #afece1;
+    font-weight:bold;
+    background-color: #339989;
     padding: 10px 20px;
     font-family: sans-serif, Arial;
     font-size: 16px;
@@ -164,7 +172,7 @@ ul {
 .radio-toolbar4 input[type="radio"]:checked + label,
 .radio-toolbar5 input[type="radio"]:checked + label,
 .radio-toolbar6 input[type="radio"]:checked + label{
-    background-color:#bfb;
+    background-color:rgb(173, 206, 173);
     border-color: #4c4;
 }
 .radio-toolbar input[type="radio"]:focus + label,
@@ -192,7 +200,7 @@ ul {
   .seuraava5,
   .seuraava6,
   .uudestaan {
-    background-color: rgb(209, 102, 15);
+    background-color: #1c534b;
     padding: 10px 20px;
     color:antiquewhite;
     font-family: sans-serif, Arial;
@@ -208,6 +216,6 @@ ul {
   .nelja p,
   .viisi p,
   .kuusi p{
-      color:burlywood;
+      color:rgb(119, 211, 191);
       font-family: 'Montserrat', sans-serif;
   }
