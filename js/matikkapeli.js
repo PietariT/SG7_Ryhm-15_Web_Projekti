@@ -153,15 +153,15 @@ function getRndInteger(min, max) {
 
   //tähtien lisäys sivulle ja animaatiot
   function pistetys () {
-      $("#tähti1").removeClass("fa fa-star-o").addClass("fa fa-star").addClass("oikea")
-    if (määrä === 2) {
-      $("#tähti2").removeClass("fa fa-star-o").addClass("fa fa-star").addClass("oikea")
-    }
-    if (määrä === 3) {
-      $("#tähti3").removeClass("fa fa-star-o").addClass("fa fa-star").addClass("oikea")
-    }
-    if (määrä === 4) {
-      $("#tähti4").removeClass("fa fa-star-o").addClass("fa fa-star").addClass("oikea")
+  $('[name="tähti1"]').removeClass("fa fa-star-o").addClass("fa fa-star").addClass("oikea")
+  if (määrä === 2) {
+    $('[name="tähti2"]').removeClass("fa fa-star-o").addClass("fa fa-star").addClass("oikea")
+  }
+  if (määrä === 3) {
+    $('[name="tähti3"]').removeClass("fa fa-star-o").addClass("fa fa-star").addClass("oikea")
+  }
+  if (määrä === 4) {
+    $('[name="tähti4"]').removeClass("fa fa-star-o").addClass("fa fa-star").addClass("oikea")
     }
   }
 
@@ -188,10 +188,10 @@ function getRndInteger(min, max) {
     $(".bg-danger").removeClass("bg-danger").addClass("bg-dark")
     if (d === 4) {
       modal1() 
-      $("#tähti1").removeClass("oikea")
-      $("#tähti2").removeClass("oikea")
-      $("#tähti3").removeClass("oikea")
-      $("#tähti4").removeClass("oikea")
+      $('[name="tähti1"]').removeClass("oikea")
+      $('[name="tähti2"]').removeClass("oikea")
+      $('[name="tähti3"]').removeClass("oikea")
+      $('[name="tähti4"]').removeClass("oikea")
       $("#reload").removeClass("disabled")
       return;
     }
