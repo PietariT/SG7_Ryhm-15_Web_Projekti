@@ -208,8 +208,11 @@ function getRndInteger(min, max) {
 });
 
 //uudelleen käynnistys
-$("#reload").on("click", function(){
-  location.reload();
+$("#reload").on("click", function () {
+  $(".kysymykset").fadeOut("fast");
+  setTimeout(function () {
+    location.reload();
+  }, 400);
 });
 
 
