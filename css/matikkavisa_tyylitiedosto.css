@@ -2,7 +2,8 @@
 	/* Author: Roni Junttila*/
 
 	@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap);
-	
+	@import url(https://fonts.googleapis.com/css2?family=Exo+2&display=swap);	
+
 	html {
 		margin:0em;
 		padding:0
@@ -150,7 +151,7 @@
 
 			  .modal {
 				background-color: rgba(0,0,0,0.7);
-			
+				font-family: 'Exo 2', sans-serif;
 			  }
 		  
 			  @media screen and (min-width: 640px) {
