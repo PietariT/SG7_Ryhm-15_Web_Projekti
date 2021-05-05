@@ -1,6 +1,6 @@
 /// <reference path="jquery-3.6.0.min.js" />
 //Globaali muuttuja, johon pusketaan oikeat vastaukset
-let oikein = [0];
+let oikein = [1];
 
 //aluksi piilotetaan säännöt sekä pisteiden tulostus
 $('.saannot').hide();
