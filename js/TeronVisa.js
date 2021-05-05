@@ -29,10 +29,13 @@ $(function () {
       $("#vastataan1").on("click", function () {
         let valinta = Number($("[name=kys1]:checked").val());
         if (valinta === 3) {
-            $("#right1").html("Vastauksesi on oikein!");
+            $("#right1").html("Oikein!");
         } else {
-            $("#wrong1").html("Vastauksesi on väärin.");
-        } 
+            $("#wrong1").html("Väärin.");
+      }
+      $("[name=kys1]").hide(500);
+      
+      
     });
     
 
@@ -44,12 +47,13 @@ $(function () {
       });
 
       $("#vastataan2").on("click", function () {
-        let valinta = Number($("[name=kys2]:checked").val());
-        if (valinta === 2) {
-            $("#right2").html("Vastauksesi on oikein!");
+        let i = Number($("[name=kys2]:checked").val());
+        if (i === 2) {
+            $("#right2").html("Oikein!");
         } else {
-            $("#wrong2").html("Vastauksesi on väärin.");
-        }
+            $("#wrong2").html("Väärin.");
+      }
+      $("[name=kys2]").hide(500);
     });
 
 
@@ -60,12 +64,13 @@ $(function () {
       });
 
       $("#vastataan3").on("click", function () {
-        let valinta = Number($("[name=kys3]:checked").val());
-        if (valinta === 1) {
-            $("#right3").html("Vastauksesi on oikein!");
+        let i = Number($("[name=kys3]:checked").val());
+        if (i === 1) {
+            $("#right3").html("Oikein!");
         } else {
-            $("#wrong3").html("Vastauksesi on väärin.");
-        }
+            $("#wrong3").html("Väärin.");
+      }
+      $("[name=kys3]").hide(500);
     });
 
     /* Kysymys 4 esiin */
@@ -75,12 +80,13 @@ $(function () {
       });
 
       $("#vastataan4").on("click", function () {
-        let valinta = Number($("[name=kys4]:checked").val());
-        if (valinta === 3) {
-            $("#right4").html("Vastauksesi on oikein!");
+        let i = Number($("[name=kys4]:checked").val());
+        if (i === 3) {
+            $("#right4").html("Oikein!");
         } else {
-            $("#wrong4").html("Vastauksesi on väärin.");
-        }
+            $("#wrong4").html("Väärin.");
+      }
+      $("[name=kys4]").hide(500);
     });
 
     /* Kysymys 5 esiin */
@@ -90,15 +96,16 @@ $(function () {
       });
 
       $("#vastataan5").on("click", function () {
-        let valinta = Number($("[name=kys5]:checked").val());
-        if (valinta === 3) {
-            $("#right5").html("Vastauksesi on oikein!");
+        let i = Number($("[name=kys5]:checked").val());
+        if (i === 3) {
+            $("#right5").html("Oikein!");
         } else {
-            $("#wrong5").html("Vastauksesi on väärin.");
-        }
+            $("#wrong5").html("Väärin.");
+      }
+      $("[name=kys5]").hide(500);
     });
 
-    /* Pisteesi ruutu esiin */
+    /* Pisteesi ruutu esiin ja pisteiden lasku*/
     $("#tulokset5").on("click", function(){
       $("[name=kysymys5]").hide(500);
       $("[name=tuloksia]").slideDown(1000);

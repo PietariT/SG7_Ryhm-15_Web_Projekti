@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Marko+One&display=swap');
 
-
+/* taustakuva */
 .teroback {
     background-image: url("../img/elefantti.jpg");
     background-size: auto;
@@ -25,15 +25,17 @@
     padding: 10px 10px 10px 10px;
 }
 
+/* aloitusruudun ja visan aloituksen määrittelyjä */
 .aloitusinfo {
     margin-left: 8em;
     padding: 10px 10px 10px 20px;
     color: black;
     border-radius: 10px;
-    background-color: rgba(187, 192, 155, 0.9);
+    background-color: rgba(187, 192, 155, 0.96);
     border-style: dotted;
     border-color: white;
     letter-spacing: 2px;
+    font-size: 25px;
     
 
 }
@@ -50,35 +52,41 @@ h1, p {
 /* sectioneille taustakuvat */
 .bg-image {
     background-image: url("../img/käärme.jpg");
-    background-repeat: round;
-    background-size: 100%;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
 }
 
 .bg-image2 {
     background-image: url("../img/karhu.jpg");
-    background-repeat: round;
-    background-size: 100%;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    
 
 }
 
 .bg-image3 {
     background-image: url("../img/ahven.jpg");
-    background-repeat: round;
-    background-size: 100%;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
 
 }
 
 .bg-image4 {
     background-image: url("../img/leijona.jpg");
-    background-repeat: round;
-    background-size: 100%;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
 
 }
 
 .bg-image5 {
     background-image: url("../img/naali.jpg");
-    background-repeat: round;
-    background-size: 100%;
+    width: 100%;
+    height: 200x;
+    background-size: cover;
 
 }
 
