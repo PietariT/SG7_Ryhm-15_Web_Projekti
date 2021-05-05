@@ -166,6 +166,15 @@ nav {
 
 }
 /* Tietoja sivun tyylejä */
+
+.tausta3 {
+	background-image: linear-gradient(#131515 1%, transparent),
+	  url('../img/tietojasivuntausta.jpg');
+	background-color: #131515;
+	background-size: 100%;
+	background-size: cover;
+  }
+
 .tekstiTietojaSivu{
 	background-color:  #131515;
     padding: 60px;
