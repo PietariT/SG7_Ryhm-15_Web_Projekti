@@ -7,12 +7,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kotta+One&display=swap');
 
 /*Taustakuva*/
+body {
+  width: 100%;
+}
 .backg {
-  background-image: linear-gradient(to bottom left, #a3ecec 1%, transparent),
+  background-image: linear-gradient(to bottom left, #a3ecec 0,35%, transparent),
     url("../img/compass1.jpg");
   background-size: 100%;
+
 }
 
 /*Teksti laatikko*/
@@ -24,7 +29,7 @@
   border-collapse: inherit;
   border-radius: 10px;
   box-shadow: 20px 20px 10px 10px #2b2c28;
-  max-width: 550px;
+  max-width: 700px;
 }
 
 /*Kysymys laatikko*/
@@ -36,6 +41,9 @@
   margin-bottom: 50px;
   padding-top: 10px;
   max-width: 550px;
+}
+.alin {
+  margin-bottom: 100px;
 }
 .palkinto {
   font-family: 'Parisienne', cursive;
@@ -81,11 +89,11 @@
 }
 /*Fontteja*/
 h3 {
-  font-family: 'Jua', sans-serif;
+  font-family: 'Kotta One', serif;
 }
 h1 {
   font-family: 'Jua', sans-serif;
-  font-size: 60px;
+  font-size: 80px;
 }
 .hided {
   font-family: 'Lexend', sans-serif;
@@ -111,4 +119,36 @@ h1 {
 .form-check-input:hover {
   background-color: #7DE2D1;
   border: solid black 2px;
+}
+.nappi1 {
+  border-radius: 15px;
+  min-width: 250px;
+  font-family: 'Lexend', sans-serif;
+}
+.nappi1:hover {
+  background-color: #7DE2D1;
+  color: black;
+  border: solid black 3px;
+}
+
+@media only screen and (max-width: 700px) {
+  h1 {
+    font-size: 60px;
+  }
+  .tekst {
+    font-size: 18px;
+  }
+  .tar {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+@media only screen and (min-width: 1190px) {
+  .laatikko{
+    max-width: 600px;
+  }
 }
