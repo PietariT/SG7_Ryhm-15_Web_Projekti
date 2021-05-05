@@ -5,7 +5,8 @@ let sivut = [
     'THvisa.html',
     'PTvisa.html',
     'muistipeli.html',
-    'matikka_visa.html'
+    'matikka_visa.html',
+    'KJvisa2.html'
 ];
 
 let sivut2 = [
@@ -13,17 +14,18 @@ let sivut2 = [
     'PTvisa.html',
     'PTristikko.html',
     'muistipeli.html',
-    'matikka_visa.html'
+    'matikka_visa.html',
+    'KJvisa2.html'
 ];
 
 $(function () {
     $("#arvo1").on("click", function(){
-        let sivu = Math.floor(Math.random(sivut) * 3);
+        let sivu = Math.floor(Math.random(sivut) * 5);
         window.open(sivut[sivu]);
     });
     $(function () {
         $("#arvo2").on("click", function(){
-            let sivu = Math.floor(Math.random(sivut2) * 4);
+            let sivu = Math.floor(Math.random(sivut2) * 6);
             window.open(sivut2[sivu]);
         });
     
