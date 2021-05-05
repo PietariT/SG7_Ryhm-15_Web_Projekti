@@ -19,7 +19,7 @@ p {
 }
 #carousel p{
 	font-family: 'Volkhov', serif;
-	font-size: 18px;
+	font-size: 15px;
 	background-color: rgba(0, 0, 0, 0.7);
 	border-radius: 5px;
 }
@@ -30,11 +30,6 @@ p {
 	background-color: rgba(0, 0, 0, 0.7);
 	border-radius: 5px;
 }
-/*#carousel :hover{
-	background-color:  #012e27;;
-	border-radius: 5px;
-}*/
-
 
 body {
 	background-color: #131515;
@@ -47,7 +42,7 @@ body {
 }
 
 .tausta{
-	background-image: linear-gradient(#131515 1%, transparent), url("Untitled.png") ;	
+	background-image: linear-gradient(#131515 1%, transparent), url("../img/Untitled.png") ;	
 	background-size: 100%;
 	background-color:  #131515;
 }
@@ -198,6 +193,13 @@ nav {
 .button1 {
 	position: relative;
 	z-index: 100;
+}
+.dropdown-menu {
+	background-color:#339989;
+}
+.dropdown-item:hover {
+	background-color:black;
+	color: white;
 }
 @media all and (max-width: 992px) {
 	.Ptesti1 {
