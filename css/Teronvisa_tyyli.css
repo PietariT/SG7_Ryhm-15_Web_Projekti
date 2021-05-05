@@ -3,7 +3,7 @@
 
 
 .teroback {
-    background-image: url("elefantti.jpg");
+    background-image: url("../img/elefantti.jpg");
     background-size: auto;
     border-style: double;
     border-color:white;
@@ -20,6 +20,9 @@
 
 .kyssäri {
     color: black;
+    background-color: cornsilk;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
 }
 
 .aloitusinfo {
@@ -44,36 +47,54 @@ h1, p {
     size: 30px;
 }
 
+/* sectioneille taustakuvat */
 .bg-image {
-    background-image: url("käärme.jpg");
+    background-image: url("../img/käärme.jpg");
     background-repeat: round;
     background-size: 100%;
 }
 
 .bg-image2 {
-    background-image: url("karhu.jpg");
+    background-image: url("../img/karhu.jpg");
     background-repeat: round;
     background-size: 100%;
 
 }
 
 .bg-image3 {
-    background-image: url("ahven.jpg");
+    background-image: url("../img/ahven.jpg");
     background-repeat: round;
     background-size: 100%;
 
 }
 
 .bg-image4 {
-    background-image: url("leijona.jpg");
+    background-image: url("../img/leijona.jpg");
     background-repeat: round;
     background-size: 100%;
 
 }
 
 .bg-image5 {
-    background-image: url("naali.jpg");
+    background-image: url("../img/naali.jpg");
     background-repeat: round;
     background-size: 100%;
 
+}
+
+.radio {
+    background-color: cornsilk;
+    border-radius: 10px;
+    padding: 5px 5px 5px 5px;
+    margin-bottom: 2px;
+    background-color: rgba(187, 192, 155, 0.9);
+}
+
+span {
+    color: black;
+    
+}
+
+.pisteesi {
+    font-size: 25px;
 }

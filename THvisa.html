@@ -92,7 +92,7 @@
 
 
   
-<section class="teroback">
+<section class="teroback rounded p-5 img-fluid">
 
   <section class="p-4 img-fluid">
     <section class="row">
@@ -102,7 +102,7 @@
     </section><br>
 
     <section class="row mb-5">
-      <div class="aloitusinfo col-4">
+      <div class="aloitusinfo col-4" name="infoja">
         <p>1. Visassa ei ole aikarajoitusta.</p>
         <p>2. Vastaa viiteen kysymykseen parhaasi mukaan.</p>
         <p>3. Näet visan lopussa pistemääräsi.</p>
@@ -110,7 +110,7 @@
     </section>
 
     <section>
-      <div class="row">
+      <div class="row" name="aloitusnapukka">
         <div class="col-12 aloitusnappi">
           <button id="aloitus" type="button" class="btn btn-primary btn-outline-light">Aloita</button>
         </div>
@@ -121,7 +121,7 @@
       <div class="container" name="kysymys1">
         <div class="d-flex justify-content-center row">
           <div class="col-md-10 col-lg-10">
-            <div class="border border-5">
+            <div class="border border-5 rounded">
                 <div class="bg-image p-3 border-bottom">
                   <div class="d-flex flex-row align-items-center question-title">
                     <h5 class="mt-1 ml-2 kyssäri">Mikä seuraavista eläimistä matelee?</h5>
@@ -138,19 +138,27 @@
                     <label class="radio" for="vas3"> <input type="radio" name="kys1" value="3" id="vas3"> <span>Käärme</span></label>
                   </div>
                   <div class="d-flex flex-row justify-content-between align-items-center p-3">
+                    <button id="vastataan1" class="btn btn-primary border-success align-items-center btn-success" type="button">Vastaa<i class="fa fa-angle-right ml-2"></i>
+                    </button>
                     <button id="seu1" class="btn btn-primary border-success align-items-center btn-success" type="button">Seuraava<i class="fa fa-angle-right ml-2"></i>
-                    </button></div>
+                    </button>
+                  </div>
+                    <div class="tar mt-3">
+                      <p class="text-center text-white" id="wrong1"></p>
+                      <p class="text-center text-white" id="right1"></p>
+                    </div>
                 </div>
             </div>
           </div>
         </div>
+      </div>
   </section>
-          <br>
+          
   <section>
     <div class="container" name="kysymys2">
       <div class="d-flex justify-content-center row">
           <div class="col-md-10 col-lg-10">
-              <div class="border border-5">
+              <div class="border border-5 rounded">
                   <div class="bg-image2 p-3 border-bottom">
                       <div class="d-flex flex-row align-items-center question-title">
                           <h5 class="mt-1 ml-2 kyssäri">Suomen kansalliseläin on?</h5>
@@ -167,21 +175,29 @@
                         <label class="radio" for="vas6"> <input type="radio" name="kys2" value="3" id="vas6"> <span>Metso</span>
                         </label>
                       </div>
+                    <div class="d-flex flex-row justify-content-between align-items-center p-3">
+                      <button id="vastataan2" class="btn btn-primary border-success align-items-center btn-success" type="button">Vastaa<i class="fa fa-angle-right ml-2"></i>
+                      </button>
+                      <button id="seu2" class="btn btn-primary border-success align-items-center btn-success" type="button">Seuraava<i class="fa fa-angle-right ml-2"></i>
+                      </button>
+                    </div>
+                      <div class="tar mt-3">
+                        <p class="text-center text-white" id="wrong2"></p>
+                        <p class="text-center text-white" id="right2"></p>
+                      </div>
                   </div>
-                  <div class="d-flex flex-row justify-content-between align-items-center p-3">
-                    <button id="seu2" class="btn btn-primary border-success align-items-center btn-success" type="button">Seuraava<i class="fa fa-angle-right ml-2"></i>
-                    </button></div>
               </div>
           </div>
       </div>
     </div>
+    
   </section>
-          <br>
+          
   <section>
     <div class="container" name="kysymys3">
       <div class="d-flex justify-content-center row">
         <div class="col-md-10 col-lg-10">
-          <div class="border border-5">
+          <div class="border border-5 rounded">
             <div class="bg-image3 p-3 border-bottom">
               <div class="d-flex flex-row align-items-center question-title">
                 <h5 class="mt-1 ml-2 kyssäri">Suomen kansalliskala on?</h5>
@@ -199,23 +215,29 @@
                     </label>
                   </div>
                   <div class="d-flex flex-row justify-content-between align-items-center p-3">
+                    <button id="vastataan3" class="btn btn-primary border-success align-items-center btn-success" type="button">Vastaa<i class="fa fa-angle-right ml-2"></i>
+                    </button>
                     <button id="seu3" class="btn btn-primary border-success align-items-center btn-success" type="button">Seuraava<i class="fa fa-angle-right ml-2"></i>
                     </button>
+                  </div>
+                  <div class="tar mt-3">
+                    <p class="text-center text-white" id="wrong3"></p>
+                    <p class="text-center text-white" id="right3"></p>
                   </div>
             </div>
           </div>
         </div>
-    </div>
+     </div>
   </section>
-          <br>
+          
   <section>
     <div class="container" name="kysymys4">
       <div class="d-flex justify-content-center row">
         <div class="col-md-10 col-lg-10">
-          <div class="border border-5">
+          <div class="border border-5 rounded">
             <div class="bg-image4 p-3 border-bottom">
               <div class="d-flex flex-row align-items-center question-title">
-                <h5 class="mt-1 ml-2 kyssäri">Mikä tai mikä on koiras?</h5>
+                <h5 class="mt-1 ml-2 kyssäri">Mitä tai mikä on koiras?</h5>
               </div>
               <div class="ans ml-2">
                 <label class="radio" for="vas10"> <input type="radio" name="kys4" value="1" id="vas10"> <span>Naispuolinen eläin, naaras</span>
@@ -229,22 +251,28 @@
                 <label class="radio" for="vas12"> <input type="radio" name="kys4" value="3" is="vas12"> <span>Miespuolinen eläin, uros</span>
                 </label>
               </div>
-            </div>
-            <div class="d-flex flex-row justify-content-between align-items-center p-3">
+            
+              <div class="d-flex flex-row justify-content-between align-items-center p-3">
+                <button id="vastataan4" class="btn btn-primary border-success align-items-center btn-success" type="button">Vastaa<i class="fa fa-angle-right ml-2"></i>
+                </button>
                 <button id="seu4" class="btn btn-primary border-success align-items-center btn-success" type="button">Seuraava<i class="fa fa-angle-right ml-2"></i>
                 </button>
-            </div>
+                </div>
+                <div class="tar mt-3">
+                  <p class="text-center text-white" id="wrong4"></p>
+                  <p class="text-center text-white" id="right4"></p>
+                </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-          <br>
+          
   <section>
     <div class="container" name="kysymys5">
       <div class="d-flex justify-content-center row">
         <div class="col-md-10 col-lg-10">
-          <div class="border border-5">
+          <div class="border border-5 rounded">
             <div class="bg-image5 p-3 border-bottom">
               <div class="d-flex flex-row align-items-center question-title">
                 <h5 class="mt-1 ml-2 kyssäri">Mikä seuraavista kuulu uhanalaisiin eläimiin?</h5>
@@ -261,17 +289,38 @@
                 <label class="radio" for="vas15"> <input type="radio" name="kys5" value="3" id="vas15"> <span>Naali</span>
                 </label>
               </div>
-            </div>
+            
               <div class="d-flex flex-row justify-content-between align-items-center p-3">
-                <button id="seu5" class="btn btn-primary border-success align-items-center btn-success" type="button">Seuraava<i class="fa fa-angle-right ml-2"></i>
+                <button id="vastataan5" class="btn btn-primary border-success align-items-center btn-success" type="button">Vastaa<i class="fa fa-angle-right ml-2"></i>
+                </button>
+                <button id="tulokset5" class="btn btn-primary border-success align-items-center btn-success" type="button">Katso tulokset<i class="fa fa-angle-right ml-2"></i>
                 </button>
               </div>
-          </div> <br>
+              <div class="tar mt-3">
+                <p class="text-center text-white" id="wrong5"></p>
+                <p class="text-center text-white" id="right5"></p>
+              </div>
+           </div>
         </div>
       </div>
     </div>
+    
   </section>
-        <br> <br> <br>
+
+  <section>
+    <div class="container" name="tuloksia">
+      <div class="d-flex justify-content-center row">
+        <div class="col-md-10 col-lg-10">
+          <div class="p-3">
+              <div class="d-flex flex-row align-items-center">
+                <p class="mt-md-5 pisteesi" id="pisteesi"></p>
+              </div>
+          </div>
+        
+      </div>
+    </div>
+  </section>
+        
 </section>
 
         
