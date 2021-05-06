@@ -42,7 +42,7 @@ $(function () {
 
     /* Kysymys 2 esiin */
     $("#seu1").on("click", function(){
-      $("[name=kysymys1]").hide(500);
+      $("[name=kysymys1]").hide(1000);
       $("[name=kysymys2]").slideDown(1000);
       });
 
@@ -59,7 +59,7 @@ $(function () {
 
     /* Kysymys 3 esiin */
     $("#seu2").on("click", function(){
-      $("[name=kysymys2]").hide(500);
+      $("[name=kysymys2]").hide(1000);
       $("[name=kysymys3]").slideDown(1000);
       });
 
@@ -75,7 +75,7 @@ $(function () {
 
     /* Kysymys 4 esiin */
     $("#seu3").on("click", function(){
-      $("[name=kysymys3]").hide(500);
+      $("[name=kysymys3]").hide(1000);
       $("[name=kysymys4]").slideDown(1000);
       });
 
@@ -91,7 +91,7 @@ $(function () {
 
     /* Kysymys 5 esiin */
     $("#seu4").on("click", function(){
-      $("[name=kysymys4]").hide(500);
+      $("[name=kysymys4]").hide(1000);
       $("[name=kysymys5]").slideDown(1000);
       });
 
@@ -107,7 +107,7 @@ $(function () {
 
     /* Pisteesi ruutu esiin ja pisteiden lasku*/
     $("#tulokset5").on("click", function(){
-      $("[name=kysymys5]").hide(500);
+      $("[name=kysymys5]").hide(1000);
       $("[name=tuloksia]").slideDown(1000);
 
       $("#tulokset5").prop("disabled", true);
@@ -133,7 +133,7 @@ $(function () {
           result++
       }
       $("[name=tuloksia]").show(100);
-      result = $("#pisteesi").html( "Pisteesi:  " + result + " /5");
+      result = $("#pisteesi").html( "Pisteesi:  " + result + "/5");
       
       
     

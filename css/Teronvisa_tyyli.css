@@ -103,6 +103,13 @@ span {
     
 }
 
+/* Pisteiden fonttikoko */
+
 .pisteesi {
-    font-size: 25px;
+    font-size: 40px;
+    
+}
+
+.napukat {
+    padding: 5px;
 }
