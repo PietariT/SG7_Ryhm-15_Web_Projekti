@@ -49,6 +49,7 @@
   text-align: center;
   text-transform: uppercase;
   font-weight: bolder;
+  
 }
 /* input hover */
 .pohja td input:hover {
@@ -127,6 +128,7 @@ footer{
   background-color: #222;
   padding: 5px 40px;
   margin-bottom: 10px;
+  margin-left: 30px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
   font-family: 'Kotta One', serif;
   min-height: 30px;
@@ -241,16 +243,16 @@ footer{
 @media screen and (min-width: 360px) {
   .pohja td {
     border: 2px solid #339989;
-    max-width: 28px;
-    max-height: 28px;
+    max-width: 32px;
+    max-height: 32px;
   }
   .pohja {
     margin: 3px;
   }
   .pohja td div {
     position: relative;
-    min-width: 26px;
-    min-height: 26px;
+    min-width: 30px;
+    min-height: 30px;
   }
   .pohja td span {
     display: block;
@@ -269,8 +271,8 @@ footer{
     font-family: arial, sans-serif;
     font-size: inherit;
     line-height: 23px;
-    width: 26px;
-    height: 26px;
+    width: 30px;
+    height: 30px;
     text-align: center;
     text-transform: uppercase;
     font-weight: bolder;
@@ -369,7 +371,7 @@ footer{
   }
   .kysymykset {
     background-color: #339989;
-    max-width: 350px;
+    max-width: 330px;
     align-self: center;
     margin: auto;
   }
@@ -380,7 +382,7 @@ footer{
 @media screen and (max-width: 812px) {
   .kysymykset {
     background-color: #339989;
-    max-width: 350px;
+    max-width: 330px;
     align-self: center;
     margin: auto;
   }
