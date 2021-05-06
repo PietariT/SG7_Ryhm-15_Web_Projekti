@@ -32,8 +32,6 @@
     color: black;
     border-radius: 10px;
     background-color: rgba(187, 192, 155, 0.96);
-    border-style: dotted;
-    border-color: white;
     letter-spacing: 2px;
     font-size: 25px;
     
@@ -111,5 +109,5 @@ span {
 }
 
 .napukat {
-    padding: 5px;
+  padding: 1px;
 }
