@@ -1,3 +1,8 @@
+/* 
+    Created on : 01.04.2021
+    Author     : Pietari Tanner, Katariina Järvenpää, Roni Junttila, Tero Hietala
+*/
+
 /* Eerie black #131515
 Jet #2B2C28
 Persian Green #339989
@@ -127,7 +132,6 @@ a{
 	width: 100%;
 }
 
-
 .btn2{
 	margin-top: 10px;
 }
@@ -136,7 +140,6 @@ a{
 	margin-top: 10px;
 	
 }
-
 
 footer p{
 	background-color:#131515;
@@ -165,6 +168,7 @@ nav {
 	.navbar .nav-item .dropdown-menu{ margin-top:0; }
 
 }
+
 /* Tietoja sivun tyylejä */
 
 .tausta3 {
@@ -231,5 +235,11 @@ nav {
 @media all and (max-width: 576px) {
 	.Ptesti1 {
 		font-size: 8px;
+	}
+	#carousel p {
+		font-size: 8px;
+	}
+	#carousel h4 {
+		font-size: 10px;
 	}
 }

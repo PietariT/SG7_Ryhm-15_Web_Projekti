@@ -1,5 +1,8 @@
 /// <reference path="jquery-3.6.0.min.js" /> 
-
+/* 
+    Created on : 01.04.2021
+    Author     : Pietari Tanner, Katariina Järvenpää, Roni Junttila, Tero Hietala
+*/
 // Index sivun arvonta napit
 let sivut = [
     'THvisa.html',
@@ -18,7 +21,7 @@ let sivut2 = [
     'KJvisa2.html'
 ];
 
-$(function () {
+$(function() {
     $("#arvo1").on("click", function(){
         let sivu = Math.floor(Math.random(sivut) * 5);
         window.open(sivut[sivu]);
