@@ -24,12 +24,12 @@ let sivut2 = [
 $(function() {
     $("#arvo1").on("click", function(){
         let sivu = Math.floor(Math.random(sivut) * 5);
-        window.open(sivut[sivu]);
+        window.open(sivut[sivu], "_self");
     });
     $(function () {
         $("#arvo2").on("click", function(){
             let sivu = Math.floor(Math.random(sivut2) * 6);
-            window.open(sivut2[sivu]);
+            window.open(sivut2[sivu], "_self");
         });
     
     }); 
