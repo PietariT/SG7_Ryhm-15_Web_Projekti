@@ -95,220 +95,242 @@
 
     <div class="container-fluid">
       <div class="puistotausta p-5 img-fluid">
-      <div class="row justify-content-center">
-          <div class="alku" id="alku">
-            <img src="img/jun1.png" alt="jun1" class="img-fluid">
-          </div>
-
-          <button class="kertaa" id="kertaa">Kertaa</button>
-        </div>
-          <div class="kertaus piilota" id="kertaus">
-            <p><img src="img/jun2.png" alt="jun2" class="img-fluid"></p>
-            <div id="kertaus1">
-              <p><div>1.Kun kello on <u>yli</u> tietyn ajan, on se ruotsiksi <b>efter</b>.</div>
-              <div>2. Kun pitkä viisari osoittaa kuutosta, eli puolta, on se silloin <b>halv</b>.</div>
-              <div>3. Kun pitkä viisari on ylittänyt puolen kellotaululla, on se aina <b>före</b>.</div>
-              <div>4. Esimerkki: Kello on kaksikymmentä yli kahdeksan. "Klockan är tjugo <b>över</b> åtta.</div></p>
-
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-8">
+            <div class="alku" id="alku">
+              <img src="img/jun1.png" alt="jun1" class="img-fluid">
             </div>
-          </div>
 
-          <button class="aloitetaan piilota" id="alkunen">Aloita</button>
+            <button class="kertaa" id="kertaa">Kertaa</button>
 
+            <div class="kertaus piilota" id="kertaus">
+              <p><img src="img/jun2.png" alt="jun2" class="img-fluid"></p>
+              <div id="kertaus1">
+                <p>
+                <div>1.Kun kello on <u>yli</u> tietyn ajan, on se ruotsiksi <b>efter</b>.</div>
+                <div>2. Kun pitkä viisari osoittaa kuutosta, eli puolta, on se silloin <b>halv</b>.</div>
+                <div>3. Kun pitkä viisari on ylittänyt puolen kellotaululla, on se aina <b>före</b>.</div>
+                <div>4. Esimerkki: Kello on kaksikymmentä yli kahdeksan. "Klockan är tjugo <b>över</b> åtta.</div>
+                </p>
 
-
-          <div class="eka piilota" id="jun">
-            <img src="img/jun3.png" alt="jun4" class="img-fluid">
-            <p>Joka aamu Jun herää <u>puoli</u> kahdeksan(8).</p>
-            <p>Varje morgon Jun vaknar <u>_____ </u> åtta.</p>
-          </div>
-          <div class="yksi piilota">
-            <div class="radio-toolbar">
-
-              <ul>
-                <li>
-                  <input type="radio" id="puoli" name="eka1" class="eka1" value="1">
-                  <label for="puoli">Halv</label>
-                </li>
-                <li>
-                  <input type="radio" id="vartti" name="eka1" class="eka1">
-                  <label for="vartti">Kvart före</label>
-                </li>
-                <li>
-                  <input type="radio" id="kakskyt" name="eka1" class="eka1">
-                  <label for="kakskyt">Tjugofem över</label>
-                </li>
-              </ul>
-            </div>
-            <button class="seuraava1 piilota">Seuraava</button>
-          </div>
-
-
-          <div class="toka piilota" id="jun2">
-            <img src="img/jun4.png" alt="jun5" class="img-fluid">
-            <p>Jun lähtee kouluun <u>varttia yli</u> kahdeksan(8).</p>
-            <p>Jun far till skolan <u>_____ </u> åtta.</p>
-          </div>
-          <div class="kaks piilota">
-            <div class="radio-toolbar2">
-              <ul>
-                <li>
-                  <input type="radio" id="yli" name="toka2" class="toka2" value="1">
-                  <label for="yli">Kvart över</label>
-                </li>
-                <li>
-                  <input type="radio" id="ennen" name="toka2" class="toka2">
-                  <label for="ennen">Kvart före</label>
-                </li>
-                <li>
-                  <input type="radio" id="puoli2" name="toka2" class="toka2">
-                  <label for="puoli2">Halv</label>
-                </li>
-              </ul>
-            </div>
-            <button class="seuraava2 piilota">Seuraava</button>
-          </div>
-
-
-
-          <div class="kolme piilota" id="jun3">
-            <img src="img/jun5.png" alt="jun6" class="img-fluid">
-            <p>Kaksikymmentä yli kymmenen(10) Jun syö lounaan.</p>
-            <p><u>_____ </u> tie äter Jun lunch.</p>
-          </div>
-          <div class="kolome piilota">
-            <div class="radio-toolbar3">
-              <ul>
-                <li>
-                  <input type="radio" id="puoli3" name="kolmas" class="kolmas">
-                  <label for="puoli3">Halv</label>
-                </li>
-                <li>
-                  <input type="radio" id="vartti2" name="kolmas" class="kolmas">
-                  <label for="vartti2">Kvart före</label>
-                </li>
-                <li>
-                  <input type="radio" id="kakskyt2" name="kolmas" class="kolmas" value="1">
-                  <label for="kakskyt2">Tjugo över</label>
-                </li>
-              </ul>
-            </div>
-            <button class="seuraava3 piilota">Seuraava</button>
-          </div>
-
-
-          <div class="nelja piilota" id="jun4">
-            <img src="img/jun6.png" alt="jun7" class="img-fluid">
-            <p>Kotiin tultuaan ja läksyt tehtyään, Jun alkaa leikkimään <u>viisi yli</u> viisi(5).</p>
-            <p>Efter Jun har kommit hem och gjort läxorna, börjar hen leka <u>_____ </u></p>
-          </div>
-          <div class="nelkku piilota">
-            <div class="radio-toolbar4">
-              <ul>
-                <li>
-                  <input type="radio" id="vartti3" name="neljas" class="neljas">
-                  <label for="vartti3">Kvart över</label>
-                </li>
-                <li>
-                  <input type="radio" id="femover" name="neljas" class="neljas" value="1">
-                  <label for="femover">Fem över</label>
-                </li>
-                <li>
-                  <input type="radio" id="puoli4" name="neljas" class="neljas">
-                  <label for="puoli4">Halv</label>
-                </li>
-              </ul>
-            </div>
-            <button class="seuraava4 piilota">Seuraava</button>
-          </div>
-
-            <div class="viisi piilota" id="jun5">
-              <img src="img/jun7.png" alt="jun8" class="img-fluid">
-              <p>Iltapalan jälkeen kello on jo kaksikymmentäviisi yli kahdeksan(8) ja Jun pesee hampaitaan</p>
-              <p>Efter kvällsbit klockan är redan <u>_____ </u> åtta och Jun tvättar tänderna.</p>
-            </div>
-            <div class="viikku piilota">
-              <div class="radio-toolbar5">
-                <ul>
-                  <li>
-                    <input type="radio" id="tjugofem" name="viides" class="viides" value="1">
-                    <label for="tjugofem">Tjugofem över</label>
-                  </li>
-                  <li>
-                    <input type="radio" id="femover2" name="viides" class="viides">
-                    <label for="femover2">Fem över</label>
-                  </li>
-                  <li>
-                    <input type="radio" id="puoli5" name="viides" class="viides">
-                    <label for="puoli5">Halv</label>
-                  </li>
-                </ul>
               </div>
-              <button class="seuraava5 piilota">Seuraava</button>
             </div>
 
-
-            <div class="kuusi piilota" id="jun6">
-
-              <img src="img/jun8.png" alt="jun9" class="img-fluid">
-              <p>Jun on nukkumassa jo <u>puoli</u> yhdeksän (9)</p>
-              <p>Jun är och sova redan <u>_____ </u> nie.</p>
-            </div>
-            <div class="kuus piilota">
-              <div class="radio-toolbar6">
-                <ul>
-                  <li>
-                    <input type="radio" id="kvartover" name="kuudes" class="kuudes">
-                    <label for="kvartover">Kvart över</label>
-                  </li>
-                  <li>
-                    <input type="radio" id="femover3" name="kuudes" class="kuudes">
-                    <label for="femover3">Fem över</label>
-                  </li>
-                  <li>
-                    <input type="radio" id="puoli6" name="kuudes" class="kuudes" value="1">
-                    <label for="puoli6">Halv</label>
-                  </li>
-                </ul>
-              </div>
-              <button class="seuraava6 piilota">Seuraava</button>
-            </div>
-
-
-            <div class="seitseman piilota" id="jun7">
-              <img src="img/jun8.png" alt="jun9" class="img-fluid">
-              <p><span> Sait <span id="vastaukset">0</span>/6 oikein!</span></p>
-            </div>
-
-            <button class="uudestaan piilota">Pelaa uudestaan</button>
-            <a class="btn piilota" href="index.html">Lopeta</a>
-          </div>
+            <button class="aloitetaan piilota" id="alkunen">Aloita</button>
           </div>
         </div>
 
-        <footer class="row mt-auto mx-0 pt-4">
-          <div class="col-sm-12 col-md-12 col-lg-6 mt-2 ps-4">
-            <p class="text-center text-md-start">KJ ruotsivisa 2 </p>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-8">
+            <div class="eka piilota" id="jun">
+              <img src="img/jun3.png" alt="jun4" class="img-fluid">
+              <p>Joka aamu Jun herää <u>puoli</u> kahdeksan(8).</p>
+              <p>Varje morgon Jun vaknar <u>_____ </u> åtta.</p>
+            </div>
+            <div class="yksi piilota">
+              <div class="radio-toolbar">
+
+                <ul>
+                  <li>
+                    <input type="radio" id="puoli" name="eka1" class="eka1" value="1">
+                    <label for="puoli">Halv</label>
+                  </li>
+                  <li>
+                    <input type="radio" id="vartti" name="eka1" class="eka1">
+                    <label for="vartti">Kvart före</label>
+                  </li>
+                  <li>
+                    <input type="radio" id="kakskyt" name="eka1" class="eka1">
+                    <label for="kakskyt">Tjugofem över</label>
+                  </li>
+                </ul>
+              </div>
+              <button class="seuraava1 piilota">Seuraava</button>
+            </div>
           </div>
-          <div class="col-sm-12 col-md-12 col-lg-6 py-2 pe-4">
-            <p class="text-center text-md-end">tik21km ryhmä 15<br>2021</p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-8">
+            <div class="toka piilota" id="jun2">
+              <img src="img/jun4.png" alt="jun5" class="img-fluid">
+              <p>Jun lähtee kouluun <u>varttia yli</u> kahdeksan(8).</p>
+              <p>Jun far till skolan <u>_____ </u> åtta.</p>
+            </div>
+            <div class="kaks piilota">
+              <div class="radio-toolbar2">
+                <ul>
+                  <li>
+                    <input type="radio" id="yli" name="toka2" class="toka2" value="1">
+                    <label for="yli">Kvart över</label>
+                  </li>
+                  <li>
+                    <input type="radio" id="ennen" name="toka2" class="toka2">
+                    <label for="ennen">Kvart före</label>
+                  </li>
+                  <li>
+                    <input type="radio" id="puoli2" name="toka2" class="toka2">
+                    <label for="puoli2">Halv</label>
+                  </li>
+                </ul>
+              </div>
+              <button class="seuraava2 piilota">Seuraava</button>
+            </div>
           </div>
-        </footer>
-    
-      </main>
-    
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
-        integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
-        crossorigin="anonymous"></script>
-    
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
-        integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
-        crossorigin="anonymous"></script>
-    
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    
-      <script src="js/KJkysymykset.js"></script>
-    
-    </body>
-    
-    </html>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-8">
+            <div class="kolme piilota" id="jun3">
+              <img src="img/jun5.png" alt="jun6" class="img-fluid">
+              <p>Kaksikymmentä yli kymmenen(10) Jun syö lounaan.</p>
+              <p><u>_____ </u> tie äter Jun lunch.</p>
+            </div>
+            <div class="kolome piilota">
+              <div class="radio-toolbar3">
+                <ul>
+                  <li>
+                    <input type="radio" id="puoli3" name="kolmas" class="kolmas">
+                    <label for="puoli3">Halv</label>
+                  </li>
+                  <li>
+                    <input type="radio" id="vartti2" name="kolmas" class="kolmas">
+                    <label for="vartti2">Kvart före</label>
+                  </li>
+                  <li>
+                    <input type="radio" id="kakskyt2" name="kolmas" class="kolmas" value="1">
+                    <label for="kakskyt2">Tjugo över</label>
+                  </li>
+                </ul>
+              </div>
+              <button class="seuraava3 piilota">Seuraava</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-8">
+            <div class="nelja piilota" id="jun4">
+              <img src="img/jun6.png" alt="jun7" class="img-fluid">
+              <p>Kotiin tultuaan ja läksyt tehtyään, Jun alkaa leikkimään <u>viisi yli</u> viisi(5).</p>
+              <p>Efter Jun har kommit hem och gjort läxorna, börjar hen leka <u>_____ </u></p>
+            </div>
+            <div class="nelkku piilota">
+              <div class="radio-toolbar4">
+                <ul>
+                  <li>
+                    <input type="radio" id="vartti3" name="neljas" class="neljas">
+                    <label for="vartti3">Kvart över</label>
+                  </li>
+                  <li>
+                    <input type="radio" id="femover" name="neljas" class="neljas" value="1">
+                    <label for="femover">Fem över</label>
+                  </li>
+                  <li>
+                    <input type="radio" id="puoli4" name="neljas" class="neljas">
+                    <label for="puoli4">Halv</label>
+                  </li>
+                </ul>
+              </div>
+   
+              <button class="seuraava4 piilota">Seuraava</button>
+            </div>
+          </div>
+        </div>
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-8 col-lg-8">
+                <div class="viisi piilota" id="jun5">
+                  <img src="img/jun7.png" alt="jun8" class="img-fluid">
+                  <p>Iltapalan jälkeen kello on jo kaksikymmentäviisi yli kahdeksan(8) ja Jun pesee hampaitaan</p>
+                  <p>Efter kvällsbit klockan är redan <u>_____ </u> åtta och Jun tvättar tänderna.</p>
+                </div>
+                <div class="viikku piilota">
+                  <div class="radio-toolbar5">
+                    <ul>
+                      <li>
+                        <input type="radio" id="tjugofem" name="viides" class="viides" value="1">
+                        <label for="tjugofem">Tjugofem över</label>
+                      </li>
+                      <li>
+                        <input type="radio" id="femover2" name="viides" class="viides">
+                        <label for="femover2">Fem över</label>
+                      </li>
+                      <li>
+                        <input type="radio" id="puoli5" name="viides" class="viides">
+                        <label for="puoli5">Halv</label>
+                      </li>
+                    </ul>
+                  </div>
+                  <button class="seuraava5 piilota">Seuraava</button>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-8 col-lg-8">
+                <div class="kuusi piilota" id="jun6">
+
+                  <img src="img/jun8.png" alt="jun9" class="img-fluid">
+                  <p>Jun on nukkumassa jo <u>puoli</u> yhdeksän (9)</p>
+                  <p>Jun är och sova redan <u>_____ </u> nie.</p>
+                </div>
+                <div class="kuus piilota">
+                  <div class="radio-toolbar6">
+                    <ul>
+                      <li>
+                        <input type="radio" id="kvartover" name="kuudes" class="kuudes">
+                        <label for="kvartover">Kvart över</label>
+                      </li>
+                      <li>
+                        <input type="radio" id="femover3" name="kuudes" class="kuudes">
+                        <label for="femover3">Fem över</label>
+                      </li>
+                      <li>
+                        <input type="radio" id="puoli6" name="kuudes" class="kuudes" value="1">
+                        <label for="puoli6">Halv</label>
+                      </li>
+                    </ul>
+                  </div>
+                  <button class="seuraava6 piilota">Seuraava</button>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-8 col-lg-8">
+                <div class="seitseman piilota" id="jun7">
+                  <img src="img/jun8.png" alt="jun9" class="img-fluid">
+                  <p><span> Sait <span id="vastaukset">0</span>/6 oikein!</span></p>
+                </div>
+
+                <button class="uudestaan piilota">Pelaa uudestaan</button>
+                <a class="btn piilota" href="index.html">Lopeta</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="row mt-auto mx-0 pt-4">
+      <div class="col-sm-12 col-md-12 col-lg-6 mt-2 ps-4">
+        <p class="text-center text-md-start">KJ ruotsivisa 2 </p>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-6 py-2 pe-4">
+        <p class="text-center text-md-end">tik21km ryhmä 15<br>2021</p>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+    integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+    integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+    crossorigin="anonymous"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script src="js/KJkysymykset.js"></script>
+
+</body>
+
+</html>
